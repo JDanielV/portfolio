@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB",
+    "sources": [
+        "main.scss",
+        "partials/_torum-header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
