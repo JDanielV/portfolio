@@ -1,9 +1,13 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB",
+    "mappings": "AEKA,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,UAAU;EACvB,gBAAgB,EAAE,KAAK;CAW1B;;AATI,AAAD,qBAAQ,CAAC;EACL,MAAM,EAAE,CAAC;CACZ;;AAEA,AAAD,oBAAO,CAAC;EACJ,UAAU,EAAE,2DAA2D,CAAC,SAAS,CAAC,MAAM;EACxF,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,QAAQ;CACnB;;AFlBL,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB",
     "sources": [
         "main.scss",
-        "partials/_torum-header.scss"
+        "partials/_torum-header.scss",
+        "partials/_torum-landing.scss",
+        "partials/_variables.scss",
+        "partials/_fonts.scss",
+        "partials/_breakpoints.scss"
     ],
     "names": [],
     "file": "main.css"

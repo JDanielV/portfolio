@@ -1,0 +1,23 @@
+  
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.torum-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__main {
+        background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
+        width: 100vw;
+        height: 58.75rem;
+    }
+}

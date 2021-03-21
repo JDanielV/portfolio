@@ -1,3 +1,28 @@
+.torum-landing {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: white;
+}
+
+.torum-landing__title {
+  margin: 0;
+}
+
+.torum-landing__main {
+  background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
+  width: 100vw;
+  height: 58.75rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
