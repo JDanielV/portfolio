@@ -10,14 +10,33 @@
     justify-content: center;
     align-items: flex-start;
     background-color: white;
+    font-family: "Poppins-Regular";
 
     &__title {
         margin: 0;
+        font-family: "Poppins-Semi-bold";
     }
 
     &__main {
         background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
         width: 100vw;
         height: 58.75rem;
+        padding-top: 9.375rem;
+        display: flex;
+        justify-content: center;
+
+        &-wrapper {
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 53.125rem;
+            height: 25.438rem;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
     }
 }
