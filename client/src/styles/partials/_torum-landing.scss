@@ -1,42 +1,94 @@
-  
 @import "./variables";
 @import "./fonts";
 @import "./breakpoints";
 
 .torum-landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: black;
+  font-family: "Poppins-Regular";
+
+  &__title {
+    margin: 0;
+    font-family: "Poppins-Semi-bold";
+  }
+
+  &__main {
+    background: url("./../assets/torum-assets/images/main-background.webp")
+      no-repeat center;
     width: 100vw;
-    height: 100vh;
+    height: 58.75rem;
+    padding-top: 9.375rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    background-color: white;
-    font-family: "Poppins-Regular";
 
-    &__title {
-        margin: 0;
-        font-family: "Poppins-Semi-bold";
+    &-wrapper {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 53.125rem;
+      height: 25.438rem;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    line-height: 3.4rem;
+  }
+
+  &__cta {
+    &-section-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4.125rem;
     }
 
-    &__main {
-        background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
-        width: 100vw;
-        height: 58.75rem;
-        padding-top: 9.375rem;
-        display: flex;
-        justify-content: center;
-
-        &-wrapper {
-            color: #FFFFFF;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width: 53.125rem;
-            height: 25.438rem;
-        }
+    &-button {
+      height: 3.812rem;
+      border: 2px solid #00edff;
+      border-radius: 25px;
+      box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
+      width: 27.5rem;
+      letter-spacing: 2px;
+      background-color: transparent;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 1.3rem;
     }
 
-    &__title {
-        font-size: 3rem;
+    &-background {
+      z-index: 0;
+      background: #00edff;
+      width: 120%;
+      height: 100%;
+      position: absolute;
     }
+
+    &-button-text {
+      z-index: 1;
+      font-family: "Poppins-Regular";
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 17px;
+    }
+  }
 }

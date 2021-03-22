@@ -17,6 +17,7 @@ const LandingSection = (props) => {
                     </div>
                     <div className="torum-landing__cta-section-wrapper">
                         <button className="torum-landing__cta-button">
+                            <div className="torum-landing__cta-background"/>
                             <span className="torum-landing__cta-button-text">Sign up and get free crypto</span>
                         </button>
                         <div className="torum-landing__cta-text-wrapper">
