@@ -5,6 +5,7 @@ import Header from "../src/Components/torum/Header";
 function App() {
   return (
     <div className="App">
+      <Header />
       <LandingSection />
     </div>
   );
