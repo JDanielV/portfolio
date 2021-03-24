@@ -9,27 +9,45 @@ import RewardsImg from "../../assets/torum-assets/images/reward.webp";
 const Features = (props) => {
 
     const sections = [
-
         {
             title: "Features",
             subtitle: "TORUM is packed with various features and functionalities tailored exclusively for the crypto space.",
-            featureOneTitle: "crypto projects listing",
-            featureOneImg: {BuildingImg},
-            featureOneSubtitle: "For crypto projects to showcase their latest updates.",
-            featureTwoTitle: "social gamification",
-            featureTwoImg: {ControllerImg},
-            featureTwoSubtitle: "Start earning XTM and unite with your crypto buddies.",
-            featureThreeTitle: "crypto atmosphere",
-            featureThreeImg: {AtmosphereImg},
-            featureThreeSubtitle: "Engage and interact with contents using crypto-themed gifts and emotes."
+            features: [
+                {
+                    title: "crypto projects listing",
+                    image: {BuildingImg},
+                    imageAlt: "building abstract",
+                    subtitle: "For crypto projects to showcase their latest updates.",
+                },
+                {
+                    title: "social gamification",
+                    image: {ControllerImg},
+                    imageAlt: "games",
+                    subtitle: "Start earning XTM and unite with your crypto buddies.",
+                },
+                {
+                    title: "crypto atmosphere",
+                    image: {AtmosphereImg},
+                    imageAlt: "atmosphere",
+                    subtitle: "Engage and interact with contents using crypto-themed gifts and emotes.",
+                }
+            ],
         },
         {
             title: "Introducing XTM",
             subtitle: "XTM is an ERC-20 utility token that acts as the payment medium for various features and functionalities, serving as the backbone of TORUM's ecosystem.",
-            featureOneTitle: "support sunctionality",
-            featureOneImg: {SatoshiImg},
-            featureTwoTitle: "mission rewards",
-            featureTwoImg: {RewardsImg},
+            features: [
+                {
+                    title: "support sunctionality",
+                    image: {SatoshiImg},
+                    imageAlt: "satoshi gift",
+                },
+                {
+                    title: "mission rewards",
+                    image: {RewardsImg},
+                    imageAlt: "rewards gift",
+                },
+            ],
         },
         
     ];
@@ -45,15 +63,20 @@ const Features = (props) => {
                     <span className="torum-features__subtitle">{section.subtitle}</span>
                 </div>
                 <div className="torum-features__bottom-wrapper">
-                    <div className="torum-features__feature-wrapper">
-                        <img className="torum-features__feature-img" src="" alt="" />
-                        <div className="torum-features__feature-text-wrapper">
-                            <h3 className="torum-features__feature-title">Crypto Projects Listing</h3>
-                            <span className="torum-features__feature-text">
-                                For crypto projects to showcase their latest updates.
-                            </span>
-                        </div>
-                    </div>
+                    {section.features.map((feature)=> {
+                        return(
+                            <div className="torum-features__feature-wrapper">
+                                <img className="torum-features__feature-img" src={feature.image} alt={feature.imageAlt} />
+                                <div className="torum-features__feature-text-wrapper">
+                                    <h3 className="torum-features__feature-title">{feature.title}</h3>
+                                    {feature.subtitle && 
+                                    (<span className="torum-features__feature-text">
+                                        {feature.subtitle}
+                                    </span>)}
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
                 )})}
