@@ -24,6 +24,7 @@
     padding-top: 9.375rem;
     display: flex;
     justify-content: center;
+    position: relative;
 
     &-wrapper {
       color: #ffffff;
@@ -92,5 +93,10 @@
     &-text {
       font-size: 17px;
     }
+  }
+
+  &__hero-img-wrapper {
+    position: absolute;
+    bottom: -23rem;
   }
 }

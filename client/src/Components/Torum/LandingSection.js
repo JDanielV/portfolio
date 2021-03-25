@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../styles/main.css";
+import LaptopImg from "../../assets/torum-assets/images/laptop.webp";
 
 const LandingSection = (props) => {
     return (
@@ -16,13 +17,16 @@ const LandingSection = (props) => {
                     </div>
                     <div className="torum-landing__cta-section-wrapper">
                         <button className="torum-landing__cta-button">
-                            <div className="torum-landing__cta-background"/>
+                            <div className="torum-landing__cta-background" />
                             <span className="torum-landing__cta-button-text">Sign up and get free crypto</span>
                         </button>
                         <div className="torum-landing__cta-text-wrapper">
                             <span className="torum-landing__cta-text">23,742 crypto users are connected on TORUM and we're still counting.</span>
                         </div>
                     </div>
+                </div>
+                <div className="torum-landing__hero-img-wrapper">
+                    <img className="torum-landing__hero-img" src={LaptopImg} alt="torum social media" />
                 </div>
             </div>
         </section>
