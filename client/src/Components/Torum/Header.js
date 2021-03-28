@@ -2,7 +2,7 @@ import React from 'react';
 import "../../styles/main.css";
 import LogoHeader from "../../assets/torum-assets/images/torum-logo-header.png";
 
-const Header = (props) => {
+const Header = () => {
     return (
         <header className="torum-header">
             <nav className="torum-header__nav">

@@ -6,7 +6,7 @@ import AtmosphereImg from "../../assets/torum-assets/images/crypto-atmosphere.we
 import SatoshiImg from "../../assets/torum-assets/images/gift.webp";
 import RewardsImg from "../../assets/torum-assets/images/reward.webp";
 
-const Features = (props) => {
+const Features = () => {
 
     const sections = [
         {
@@ -38,7 +38,7 @@ const Features = (props) => {
             subtitle: "XTM is an ERC-20 utility token that acts as the payment medium for various features and functionalities, serving as the backbone of TORUM's ecosystem.",
             features: [
                 {
-                    title: "support sunctionality",
+                    title: "support functionality",
                     image: SatoshiImg,
                     imageAlt: "satoshi gift",
                 },
