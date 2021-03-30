@@ -144,24 +144,6 @@
 }
 
 @media (min-width: 1440px) {
-  .torum-landing {
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background-color: black;
-  }
-}
-
-@media (min-width: 1440px) {
   .torum-landing__title {
     margin: 0;
     font-family: "Poppins-Semi-bold";
@@ -185,14 +167,6 @@
 @media (min-width: 1440px) {
   .torum-landing__main {
     height: 58.75rem;
-    padding-top: 9.375rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
   }
 }
 
@@ -268,26 +242,6 @@
   padding-bottom: 1.5rem;
 }
 
-@media (min-width: 1440px) {
-  .torum-landing__cta-section-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 4.125rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
 .torum-landing__cta-button {
   height: 3.812rem;
   border: 2px solid #00edff;
@@ -313,26 +267,7 @@
 
 @media (min-width: 1440px) {
   .torum-landing__cta-button {
-    height: 3.812rem;
-    border: 2px solid #00edff;
-    border-radius: 27px;
-    -webkit-box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
-            box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
     width: 27.5rem;
-    letter-spacing: 2px;
-    background-color: transparent;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    margin-bottom: 1.3rem;
     cursor: pointer;
   }
 }
@@ -345,16 +280,6 @@
   position: absolute;
 }
 
-@media (min-width: 1440px) {
-  .torum-landing__cta-background {
-    z-index: 0;
-    background: #00edff;
-    width: 120%;
-    height: 100%;
-    position: absolute;
-  }
-}
-
 .torum-landing__cta-button-text {
   z-index: 1;
   font-family: "Poppins-Regular";
@@ -364,10 +289,7 @@
 
 @media (min-width: 1440px) {
   .torum-landing__cta-button-text {
-    z-index: 1;
-    font-family: "Poppins-Regular";
     font-size: 18px;
-    text-transform: uppercase;
   }
 }
 
