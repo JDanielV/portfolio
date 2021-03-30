@@ -8,7 +8,7 @@ const LandingSection = (props) => {
             <div className="torum-landing__main">
                 <div className="torum-landing__main-wrapper">
                     <div className="torum-landing__title-wrapper">
-                        <h1 className="torum-landing__title">Crypto Community Building</h1>
+                        <h1 className="torum-landing__title">Community Building</h1>
                     </div>
                     <div className="torum-landing__subtitle-wrapper">
                         <span className="torum-landing__subtitle">

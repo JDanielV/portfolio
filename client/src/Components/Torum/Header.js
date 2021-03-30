@@ -11,7 +11,7 @@ const Header = () => {
                 </a>
                 <div className="torum-header__nav-signup-button">
                     <span className="torum-header__nav-signup-button-text">
-                        Login / Sign Up
+                        Login
                     </span>
                 </div>
             </nav>

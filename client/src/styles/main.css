@@ -13,90 +13,102 @@
   src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
-@media (min-width: 1440px) {
-  .torum-header {
-    width: 100%;
-    height: 6.25rem;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 1;
-    max-width: 100%;
-  }
+.torum-header {
+  width: 100%;
+  max-width: 100%;
+  height: 6.25rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  font-family: "Poppins-Regular";
+}
+
+.torum-header__nav {
+  width: 100%;
+  height: 3.625rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1440px) {
   .torum-header__nav {
-    width: 100%;
     height: 3.625rem;
     padding: 0 3.125rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  }
+}
+
+.torum-header__nav-link-logo {
+  text-decoration: none;
+  background-color: transparent;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 1440px) {
+  .torum-header__nav-link-logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
 
-@media (min-width: 1440px) {
-  .torum-header__nav-link-logo {
-    text-decoration: none;
-    background-color: transparent;
-    height: 100%;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: inline-block;
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.torum-header__nav-signup-button {
+  width: 6rem;
+  height: 100%;
+  border-radius: 27px;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 1440px) {
   .torum-header__nav-signup-button {
     width: 10.5rem;
-    height: 100%;
-    border-radius: 27px;
-    background: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: 1px solid white;
-    color: white;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     cursor: pointer;
   }
-}
-
-@media (min-width: 1440px) {
-  .torum-header__nav-signup-button-text {
-    display: inline-block;
-    padding-bottom: 0.2rem;
-  }
-  .torum-header__nav-signup-button-text:hover {
+  .torum-header__nav-signup-button:hover {
     background: white;
     color: black;
   }
+}
+
+.torum-header__nav-signup-button-text {
+  display: inline-block;
+  padding-bottom: 0.2rem;
 }
 
 @font-face {
@@ -114,6 +126,23 @@
   src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
+.torum-landing {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: black;
+  font-family: "Poppins-Regular";
+}
+
 @media (min-width: 1440px) {
   .torum-landing {
     width: 100vw;
@@ -129,7 +158,6 @@
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: black;
-    font-family: "Poppins-Regular";
   }
 }
 
@@ -140,10 +168,22 @@
   }
 }
 
+.torum-landing__main {
+  background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
+  width: 100vw;
+  height: 49.5rem;
+  padding-top: 9.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
 @media (min-width: 1440px) {
   .torum-landing__main {
-    background: url("./../assets/torum-assets/images/main-background.webp") no-repeat center;
-    width: 100vw;
     height: 58.75rem;
     padding-top: 9.375rem;
     display: -webkit-box;
@@ -156,25 +196,38 @@
   }
 }
 
+.torum-landing__main-wrapper {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25.438rem;
+  padding: 0 1rem;
+}
+
 @media (min-width: 1440px) {
   .torum-landing__main-wrapper {
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 53.125rem;
     height: 25.438rem;
+    padding: 0;
   }
+}
+
+.torum-landing__title {
+  font-size: 1.75rem;
+  margin: 0 0 2rem 0;
+  font-family: "Poppins-Semi-bold";
 }
 
 @media (min-width: 1440px) {
@@ -183,13 +236,36 @@
   }
 }
 
+.torum-landing__subtitle {
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  line-height: 2.5rem;
+}
+
 @media (min-width: 1440px) {
   .torum-landing__subtitle {
     font-size: 25px;
-    text-align: center;
-    display: inline-block;
     line-height: 3.4rem;
   }
+}
+
+.torum-landing__cta-section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.125rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 1440px) {
@@ -210,6 +286,29 @@
     margin-top: 4.125rem;
     padding-bottom: 1.5rem;
   }
+}
+
+.torum-landing__cta-button {
+  height: 3.812rem;
+  border: 2px solid #00edff;
+  border-radius: 27px;
+  -webkit-box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
+          box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
+  width: 22.18rem;
+  letter-spacing: 2px;
+  background-color: transparent;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 1.3rem;
 }
 
 @media (min-width: 1440px) {
@@ -238,6 +337,14 @@
   }
 }
 
+.torum-landing__cta-background {
+  z-index: 0;
+  background: #00edff;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+}
+
 @media (min-width: 1440px) {
   .torum-landing__cta-background {
     z-index: 0;
@@ -246,6 +353,13 @@
     height: 100%;
     position: absolute;
   }
+}
+
+.torum-landing__cta-button-text {
+  z-index: 1;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1440px) {
@@ -257,10 +371,15 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .torum-landing__cta-text {
-    font-size: 17px;
-  }
+.torum-landing__cta-text {
+  font-size: 17px;
+  text-align: center;
+  display: inline-block;
+}
+
+.torum-landing__hero-img-wrapper {
+  position: absolute;
+  bottom: -4rem;
 }
 
 @media (min-width: 1440px) {
@@ -483,6 +602,7 @@
     color: white;
     background: linear-gradient(8deg, #21d4fd, #7121ff);
     padding-left: 15rem;
+    overflow: hidden;
   }
 }
 
