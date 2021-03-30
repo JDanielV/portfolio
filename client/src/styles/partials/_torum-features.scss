@@ -3,97 +3,118 @@
 @import "./breakpoints";
 
 .torum-features {
-  background: black;
-  width: 100vw;
-  max-width: 100%;
-  height: fit-content;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Poppins-Regular";
-  padding: 14rem 0 10rem 0;
-
-  &__container {
-    width: 71.25rem;
-    color: white;
-    margin-top: 15rem;
-  }
-
-  &__top-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__title {
-    font-size: $section-title;
-    margin: 0 0 0 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins-Semi-bold";
-  }
-
-  &__divider {
-    background: linear-gradient(to left, #00d3ff, #ff00c4);
-    width: 4rem;
-    height: 0.2rem;
-    margin: 2rem 0;
-  }
-
-  &__subtitle {
-    width: 55%;
-    font-size: $section-subtitle;
-    color: #d2d2d2;
-    display: inline-block;
-    height: 7rem;
-    line-height: 1.9rem;
-    text-align: center;
-  }
-
-  &__bottom-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__feature-wrapper {
-    height: 21rem;
-    width: 23.75rem;
+  @include desktop {
+    background: black;
+    width: 100vw;
+    max-width: 100%;
+    height: fit-content;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 3rem 1rem;
-    transition: all 0.2s ease-in-out;
-    border-radius: 4px;
+    font-family: "Poppins-Regular";
+    padding: 14rem 0 10rem 0;
+  }
 
-    &:hover {
-      background: rgba(219, 211, 211, 0.1);
+  &__container {
+    @include desktop {
+      width: 71.25rem;
+      color: white;
+      margin-top: 15rem;
+    }
+  }
+
+  &__top-wrapper {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include desktop {
+      font-size: $section-title;
+      margin: 0 0 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-family: "Poppins-Semi-bold";
+    }
+  }
+
+  &__divider {
+    @include desktop {
+      background: linear-gradient(to left, #00d3ff, #ff00c4);
+      width: 4rem;
+      height: 0.2rem;
+      margin: 2rem 0;
+    }
+  }
+
+  &__subtitle {
+    @include desktop {
+      width: 55%;
+      font-size: $section-subtitle;
+      color: #d2d2d2;
+      display: inline-block;
+      height: 7rem;
+      line-height: 1.9rem;
+      text-align: center;
+    }
+  }
+
+  &__bottom-wrapper {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__feature-wrapper {
+    @include desktop {
+      height: 21rem;
+      width: 23.75rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 1rem;
+      transition: all 0.2s ease-in-out;
+      border-radius: 4px;
+
+      &:hover {
+        background: rgba(219, 211, 211, 0.1);
+      }
     }
   }
 
   &__feature-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 0.8rem;
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.8rem;
+    }
   }
 
   &__feature-title {
-    text-transform: capitalize;
-    font-size: $feature-name;
+    @include desktop {
+      text-transform: capitalize;
+      font-size: $feature-name;
+    }
   }
 
   &__feature-text {
-    color: #d2d2d2;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.9rem;
+    @include desktop {
+      color: #d2d2d2;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.9rem;
+    }
   }
 }

@@ -3,101 +3,125 @@
 @import "./breakpoints";
 
 .torum-landing {
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: black;
-  font-family: "Poppins-Regular";
+  @include desktop {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    font-family: "Poppins-Regular";
+  }
 
   &__title {
-    margin: 0;
-    font-family: "Poppins-Semi-bold";
+    @include desktop {
+      margin: 0;
+      font-family: "Poppins-Semi-bold";
+    }
   }
 
   &__main {
-    background: url("./../assets/torum-assets/images/main-background.webp")
-      no-repeat center;
-    width: 100vw;
-    height: 58.75rem;
-    padding-top: 9.375rem;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    @include desktop {
+      background: url("./../assets/torum-assets/images/main-background.webp")
+        no-repeat center;
+      width: 100vw;
+      height: 58.75rem;
+      padding-top: 9.375rem;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
 
     &-wrapper {
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 53.125rem;
-      height: 25.438rem;
+      @include desktop {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 53.125rem;
+        height: 25.438rem;
+      }
     }
   }
 
   &__title {
-    font-size: 3rem;
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 
   &__subtitle {
-    font-size: 25px;
-    text-align: center;
-    display: inline-block;
-    line-height: 3.4rem;
+    @include desktop {
+      font-size: 25px;
+      text-align: center;
+      display: inline-block;
+      line-height: 3.4rem;
+    }
   }
 
   &__cta {
     &-section-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 4.125rem;
-      padding-bottom: 1.5rem;
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.125rem;
+        padding-bottom: 1.5rem;
+      }
     }
 
     &-button {
-      height: 3.812rem;
-      border: 2px solid #00edff;
-      border-radius: 27px;
-      box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
-      width: 27.5rem;
-      letter-spacing: 2px;
-      background-color: transparent;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 1.3rem;
-      cursor: pointer;
+      @include desktop {
+        height: 3.812rem;
+        border: 2px solid #00edff;
+        border-radius: 27px;
+        box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
+        width: 27.5rem;
+        letter-spacing: 2px;
+        background-color: transparent;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 1.3rem;
+        cursor: pointer;
+      }
     }
 
     &-background {
-      z-index: 0;
-      background: #00edff;
-      width: 120%;
-      height: 100%;
-      position: absolute;
+      @include desktop {
+        z-index: 0;
+        background: #00edff;
+        width: 120%;
+        height: 100%;
+        position: absolute;
+      }
     }
 
     &-button-text {
-      z-index: 1;
-      font-family: "Poppins-Regular";
-      font-size: 18px;
-      text-transform: uppercase;
+      @include desktop {
+        z-index: 1;
+        font-family: "Poppins-Regular";
+        font-size: 18px;
+        text-transform: uppercase;
+      }
     }
 
     &-text {
-      font-size: 17px;
+      @include desktop {
+        font-size: 17px;
+      }
     }
   }
 
   &__hero-img-wrapper {
-    position: absolute;
-    bottom: -23rem;
+    @include desktop {
+      position: absolute;
+      bottom: -23rem;
+    }
   }
 }
