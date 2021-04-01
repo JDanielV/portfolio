@@ -3,38 +3,49 @@
 @import "./breakpoints";
 
 .torum-features {
+  background: black;
+  width: 100vw;
+  max-width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins-Regular";
+  padding: 14rem 0 0rem 0;
+
   @include desktop {
-    background: black;
-    width: 100vw;
-    max-width: 100%;
-    height: fit-content;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Poppins-Regular";
     padding: 14rem 0 10rem 0;
   }
 
   &__container {
+    width: 100%;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
     @include desktop {
       width: 71.25rem;
-      color: white;
       margin-top: 15rem;
     }
   }
 
   &__top-wrapper {
-    @include desktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
+    font-size: $section-title-mobile;
+    margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins-Semi-bold";
+
     @include desktop {
       font-size: $section-title;
       margin: 0 0 0 0;
@@ -46,75 +57,91 @@
   }
 
   &__divider {
+    background: linear-gradient(to left, #00d3ff, #ff00c4);
+    width: 3rem;
+    height: 0.2rem;
+    margin: 1.3rem 0;
+
     @include desktop {
-      background: linear-gradient(to left, #00d3ff, #ff00c4);
-      width: 4rem;
-      height: 0.2rem;
       margin: 2rem 0;
+      width: 4rem;
     }
   }
 
   &__subtitle {
+    width: 93%;
+    font-size: $section-subtitle-mobile;
+    color: #d2d2d2;
+    display: inline-block;
+    height: 4.5rem;
+    line-height: 1.9rem;
+    text-align: center;
+
     @include desktop {
       width: 55%;
       font-size: $section-subtitle;
-      color: #d2d2d2;
-      display: inline-block;
       height: 7rem;
-      line-height: 1.9rem;
-      text-align: center;
     }
   }
 
   &__bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @include desktop {
-      display: flex;
-      justify-content: center;
+      flex-direction: row;
     }
   }
 
   &__feature-wrapper {
-    @include desktop {
-      height: 21rem;
-      width: 23.75rem;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem 1rem;
-      transition: all 0.2s ease-in-out;
-      border-radius: 4px;
+    height: 21rem;
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
 
-      &:hover {
-        background: rgba(219, 211, 211, 0.1);
-      }
+    &:hover {
+      background: rgba(219, 211, 211, 0.1);
+    }
+
+    @include desktop {
+      width: 23.75rem;
+      padding: 3rem 1rem;
     }
   }
 
   &__feature-text-wrapper {
-    @include desktop {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 0.8rem;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
   }
 
   &__feature-title {
+    text-transform: capitalize;
+    font-size: $feature-name-mobile;
+
     @include desktop {
-      text-transform: capitalize;
       font-size: $feature-name;
     }
   }
 
   &__feature-text {
+    color: #d2d2d2;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.9rem;
+
     @include desktop {
-      color: #d2d2d2;
-      font-size: 1rem;
-      text-align: center;
-      line-height: 1.9rem;
+      font-size: 16px;
     }
   }
 }
