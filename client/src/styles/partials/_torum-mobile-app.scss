@@ -3,20 +3,35 @@
 @import "./breakpoints";
 
 .torum-mobile-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 44.5rem;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+  color: white;
+  background: linear-gradient(8deg, #21d4fd, #7121ff);
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  width: 100%;
+
   @include desktop {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 44.5rem;
-    box-sizing: border-box;
     font-family: "Poppins-Regular";
-    color: white;
-    background: linear-gradient(8deg, #21d4fd, #7121ff);
     padding-left: 15rem;
-    overflow: hidden;
+    height: 44.5rem;
   }
 
   &__left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22rem;
+    width: 100%;
+    padding: 0 0 2rem 0rem;
+
     @include desktop {
       display: flex;
       flex-direction: column;
@@ -34,6 +49,10 @@
   }
 
   &__title {
+    font-size: 1.4rem;
+    font-family: "Poppins-Semi-bold";
+    margin: 2rem 0 0 0;
+
     @include desktop {
       font-size: 2.5rem;
       font-family: "Poppins-Semi-bold";
@@ -42,6 +61,10 @@
   }
 
   &__text {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.8rem;
+
     @include desktop {
       font-size: 1rem;
       margin: 0;
@@ -50,24 +73,31 @@
   }
 
   &__button {
+    height: 3.5rem;
+    border: none;
+    border-radius: 27px;
+    box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
+    width: 14.9rem;
+    letter-spacing: 2px;
+    background: linear-gradient(to left, rgb(0, 211, 255), rgb(255, 0, 196));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-family: "Poppins-Regular";
+
     @include desktop {
-      height: 3.5rem;
-      border: none;
-      border-radius: 27px;
-      box-shadow: 0 0 20px 4px rgba(0, 208, 255, 0.7);
       width: 16.9rem;
-      letter-spacing: 2px;
-      background: linear-gradient(to left, rgb(0, 211, 255), rgb(255, 0, 196));
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      color: white;
-      cursor: pointer;
       font-size: 1.1rem;
-      text-transform: uppercase;
-      margin-top: 2rem;
     }
+  }
+  &__right-wrapper {
+    margin-top: 2rem;
   }
 }
