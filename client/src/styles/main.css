@@ -711,6 +711,169 @@
   margin-top: 2rem;
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.torum-roadmap {
+  height: 48rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4rem 0;
+  width: 100%;
+  background: black;
+  font-family: "Poppins-Regular";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.torum-roadmap__main-wrapper {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.torum-roadmap__text-wrapper {
+  width: 95%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.torum-roadmap__title {
+  margin: 0;
+}
+
+.torum-roadmap__text {
+  margin: 0;
+  width: 93%;
+  font-size: 0.875rem;
+  color: #d2d2d2;
+  display: inline-block;
+  line-height: 1.9rem;
+  text-align: center;
+}
+
+.torum-roadmap__span {
+  font-size: 0.875rem;
+  color: #d2d2d2;
+  margin: 2.5rem 0;
+}
+
+.torum-roadmap__features-slider {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.torum-roadmap__feature-wrapper {
+  height: 21.75rem;
+  min-height: 21.75rem;
+  width: 21.75rem;
+  min-width: 21.75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  margin-left: 2.3rem;
+}
+
+.torum-roadmap__feature-wrapper:hover {
+  background: rgba(219, 211, 211, 0.1);
+}
+
+.torum-roadmap__feature-title {
+  font-size: 1.375rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.comparison {
+  background: url("./../assets/torum-assets/images/powerful-bg.webp") no-repeat center;
+  font-family: "Poppins-Regular";
+}
+
+.comparison__left {
+  background: rgba(111, 0, 119, 0.8);
+}
+
+.comparison__right {
+  background: rgba(0, 32, 87, 0.8);
+}
+
+.comparison__left-content-wrapper {
+  padding: 3rem 1rem;
+  color: white;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.comparison {
+  background: url("./../assets/torum-assets/images/powerful-bg.webp") no-repeat
+    center;
+  font-family: "Poppins-Regular";
+
+  &__left {
+    background: rgba(111, 0, 119, 0.8);
+  }
+
+  &__right {
+    background: rgba(0, 32, 87, 0.8);
+  }
+
+  &__left-content-wrapper {
+    padding: 3rem 1rem;
+    color: white;
+  }
+}
