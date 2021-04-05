@@ -53,6 +53,7 @@ const ComparisonSection = () => {
     
     return (
         <section className="comparison">
+            <div className="comparison__background-wrapper">
             <div className="comparison__left">
                 <div className="comparison__left-content-wrapper">
                     <h3 className="comparison__left-title">
@@ -78,6 +79,9 @@ const ComparisonSection = () => {
                     </div>
                 </div>
             </div>
+            <div className="comparison__vs-wrapper">
+                <span className="comparison__vs-text">VS</span>
+            </div>
             <div className="comparison__right">
                 <div className="comparison__right-content-wrapper">
                     <h3 className="comparison__left-title">
@@ -102,6 +106,7 @@ const ComparisonSection = () => {
                         )})}
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     )
