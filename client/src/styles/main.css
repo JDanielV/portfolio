@@ -945,6 +945,158 @@
   letter-spacing: 3px;
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.torum-ambassadors {
+  background: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  padding: 5rem 1rem;
+  font-family: "Poppins-Regular";
+}
+
+.torum-ambassadors__main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.torum-ambassadors__title {
+  width: 80%;
+  text-align: center;
+  font-size: 1.625rem;
+  line-height: 2.6rem;
+  margin: 0;
+}
+
+.torum-ambassadors__text-wrapper {
+  margin-bottom: 3rem;
+}
+
+.torum-ambassadors__text {
+  font-size: 0.875rem;
+  color: #d2d2d2;
+  display: inline-block;
+  height: 4.5rem;
+  line-height: 1.9rem;
+  text-align: center;
+  margin: 0;
+}
+
+.torum-ambassadors__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+}
+
+.torum-ambassadors__list-item {
+  width: 90%;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.torum-ambassadors__list-item:hover {
+  background: rgba(219, 211, 211, 0.1);
+}
+
+.torum-ambassadors__item-imgs-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.torum-ambassadors__item-img2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.torum-ambassadors__item-name-wrapper {
+  text-align: center;
+}
+
+.torum-ambassadors__item-name {
+  background: -webkit-gradient(linear, left top, right top, from(#ff43a7), to(#2f7bfd));
+  background: linear-gradient(90deg, #ff43a7, #2f7bfd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins-Semi-bold";
+  font-weight: 600;
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+}
+
+.torum-ambassadors__item-subtitle {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 15px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
