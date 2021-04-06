@@ -740,6 +740,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .torum-roadmap__main-wrapper {
@@ -1095,6 +1096,67 @@
   text-align: center;
   margin-top: 0.5rem;
   font-size: 15px;
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.torum-featured {
+  background: black;
+  color: white;
+  font-family: "Poppins-Regular";
+  padding: 3rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.torum-featured__main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.torum-featured__title {
+  margin: 0;
+}
+
+.torum-featured__articles-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.torum-featured__list-item {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.torum-featured__img {
+  width: 100%;
 }
 
 * {
