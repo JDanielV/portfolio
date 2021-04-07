@@ -7,6 +7,8 @@ import RoadmapSection from "../src/Components/torum/Roadmap";
 import ComparisonSection from "../src/Components/torum/ComparisonSection";
 import AmbassadorsSection from './Components/torum/Ambassadors';
 import FeaturedOnSection from './Components/torum/FeaturedOn';
+import SignUpSection from './Components/torum/SignUp';
+import FooterSection from './Components/torum/Footer';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <ComparisonSection />
       <FeaturedOnSection />
       <AmbassadorsSection />
+      <SignUpSection />
+      <FooterSection />
     </div>
   );
 }

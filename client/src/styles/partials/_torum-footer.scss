@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.torum-footer {
+    background: black;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-family: "Poppins-Regular";
+
+    &__text-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    &__icons-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        flex-wrap: wrap;
+        height: 4.5rem;
+    }
+
+    &__icon {
+        margin: 0 .6rem .9rem .6rem;
+        height: 1.5rem;
+    }
+}

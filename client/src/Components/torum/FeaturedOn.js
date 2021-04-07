@@ -19,6 +19,7 @@ const FeaturedOnSection = () => {
                     {images.map((image) => {
                         return (
                             <li className="torum-featured__list-item">
+                                <div className="torum-featured__list-item-highlight" />
                                 <img className="torum-featured__img" src={image} alt="News Article link" />
                             </li>
                         )

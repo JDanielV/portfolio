@@ -32,6 +32,22 @@
         border-radius: 4px;
         overflow: hidden;
         cursor: pointer;
+        width: 100%;
+        max-width: 21.875rem;
+        height: 9.18rem;
+        position: relative;
+    }
+
+    &__list-item-highlight {
+        transition: all .2s ease-in-out;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        &:hover {
+            background: rgba(255,255,255, .3);
+        }
     }
 
     &__img {
