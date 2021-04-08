@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LandingSection from "../src/Components/torum/LandingSection";
 import Header from "../src/Components/torum/Header";
 import Features from "../src/Components/torum/Features";
@@ -11,6 +11,7 @@ import SignUpSection from './Components/torum/SignUp';
 import FooterSection from './Components/torum/Footer';
 
 function App() {
+
   return (
     <div className="App">
       <Header />

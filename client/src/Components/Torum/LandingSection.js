@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../../styles/main.css";
 import LaptopImg from "../../assets/torum-assets/images/laptop.webp";
 
 const LandingSection = (props) => {
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    }, []);
+
+    const handleScroll = () => {
+        console.log(window.pageYOffset);
+    };
+
     return (
-        <section className="torum-landing">
+        <section className="torum-landing" onScroll={props.updateScrollPosition}>
             <div className="torum-landing__main">
                 <div className="torum-landing__main-wrapper">
                     <div className="torum-landing__title-wrapper">
