@@ -6,16 +6,20 @@ const FixedHeader = ({ scrollThreshold }) => {
 
     const [fixedHeaderClasses, setFixedHeaderClasses] = useState("torum-header-fixed torum-header-fixed--hide");
 
+    let timer;
+
     useEffect(() => {
         if (!scrollThreshold) {
+            clearTimeout(timer);
             setFixedHeaderClasses('torum-header-fixed torum-header-fixed--hide');
-            setTimeout(() => {
+            timer = setTimeout(() => {
                 setFixedHeaderClasses("torum-header-fixed torum-header-fixed--hide torum-header-fixed--no-display");
             }, 300);
         }
         else {
+            clearTimeout(timer);
             setFixedHeaderClasses("torum-header-fixed--display");
-            setTimeout(() => {
+            timer = setTimeout(() => {
                 setFixedHeaderClasses("torum-header-fixed");
             }, 100);
         }
