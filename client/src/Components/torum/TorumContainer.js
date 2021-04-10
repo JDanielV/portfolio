@@ -12,17 +12,29 @@ import FooterSection from './Footer';
 
 function TorumContainer() {
 
+    const [scrollThreshold, setScrollThreshold] = useState({
+        scrollThreshold: false
+    });
+
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
     }, []);
 
     const handleScroll = () => {
-        console.log(window.pageYOffset);
+        if (window.pageYOffset > 99) {
+            setScrollThreshold({ scrollThreshold: true });
+        };
+        if (window.pageYOffset < 100) {
+            setScrollThreshold({ scrollThreshold: false });
+        }
     };
 
     return (
         <div className="App">
-            <Header />
+            <Header scrollThreshold={scrollThreshold.scrollThreshold} />
             <LandingSection />
             <Features />
             <MobileAppSection />

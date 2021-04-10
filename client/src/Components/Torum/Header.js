@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../../styles/main.css";
 import LogoHeader from "../../assets/torum-assets/images/torum-logo-header.png";
 
-const Header = () => {
+const Header = ({ scrollThreshold }) => {
+
+    useEffect(() => {
+        console.log(scrollThreshold);
+    }, [scrollThreshold]);
+
+
     return (
         <header className="torum-header">
             <nav className="torum-header__nav">

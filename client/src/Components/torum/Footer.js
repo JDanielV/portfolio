@@ -67,7 +67,7 @@ const FooterSection = () => {
             <div className="torum-footer__icons-wrapper">
                 {footerIcons.map((icon) => {
                     return (
-                        <img className="torum-footer__icon" src={icon.icon} alt={icon.iconAlt} />
+                        <img className="torum-footer__icon" src={icon.icon} alt={icon.iconAlt} key={icon.iconAlt} />
                     )
                 })}
             </div>
