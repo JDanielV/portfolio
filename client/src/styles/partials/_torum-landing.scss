@@ -15,13 +15,6 @@
   @include desktop {
   }
 
-  &__title {
-    @include desktop {
-      margin: 0;
-      font-family: "Poppins-Semi-bold";
-    }
-  }
-
   &__main {
     background: url("./../assets/torum-assets/images/main-background.webp")
       no-repeat center;
@@ -59,6 +52,10 @@
     margin: 0 0 2rem 0;
     font-family: "Poppins-Semi-bold";
 
+    @include tablet {
+      font-size: 2.5rem;
+    }
+
     @include desktop {
       font-size: 3rem;
     }
@@ -70,8 +67,12 @@
     display: inline-block;
     line-height: 2.5rem;
 
-    @include desktop {
+    @include tablet {
       font-size: 25px;
+      width: 95%;
+    }
+
+    @include desktop {
       line-height: 3.4rem;
     }
   }
@@ -137,9 +138,21 @@
   &__hero-img-wrapper {
     position: absolute;
     bottom: -4rem;
+    
+
+    @include tablet {
+      bottom: -16rem;
+      width: 89%;
+    }
+
     @include desktop {
       position: absolute;
       bottom: -23rem;
+      width: auto;
     }
+  }
+
+  &__hero-img {
+    width: 100%;
   }
 }

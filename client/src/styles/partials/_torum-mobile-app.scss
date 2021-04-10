@@ -7,12 +7,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 44.5rem;
+  height: 42rem;
   box-sizing: border-box;
   font-family: "Poppins-Regular";
   color: white;
   background: linear-gradient(8deg, #21d4fd, #7121ff);
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   overflow: hidden;
   width: 100%;
 
@@ -46,6 +46,10 @@
     @include desktop {
       display: flex;
     }
+  }
+
+  &__right-img {
+    transform: translateY(15%);
   }
 
   &__title {
@@ -96,8 +100,5 @@
       width: 16.9rem;
       font-size: 1.1rem;
     }
-  }
-  &__right-wrapper {
-    margin-top: 2rem;
   }
 }
