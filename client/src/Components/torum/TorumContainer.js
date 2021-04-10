@@ -27,7 +27,7 @@ function TorumContainer() {
         if (window.pageYOffset > 99) {
             setScrollThreshold({ scrollThreshold: true });
         };
-        if (window.pageYOffset < 100) {
+        if (window.pageYOffset === 0) {
             setScrollThreshold({ scrollThreshold: false });
         }
     };

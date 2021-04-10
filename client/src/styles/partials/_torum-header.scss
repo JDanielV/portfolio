@@ -12,6 +12,41 @@
   z-index: 1;
   font-family: "Poppins-Regular";
   background: linear-gradient(0deg, (rgba(0,0,0,0)), (rgba(0,0,0,1)));
+  transition: all .5s ease-in-out;
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(
+      270deg
+      ,#002057 0,#6f0077);
+      width: 100%;
+    max-width: 100%;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: "Poppins-Regular";
+    transition: all .3s ease-in-out;
+    z-index: 2;
+    opacity: 1;
+
+    &--no-display {
+      display: none;
+    }
+
+    &--display {
+      display: flex;
+      position: fixed;
+      top: 0;
+      transform: translateY(-100%);
+    }
+
+    &--hide {
+      opacity: 0;
+    }
+  }
 
   &__nav {
     width: 100%;
