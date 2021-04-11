@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "../../styles/main.css";
 import LaptopImg from "../../assets/torum-assets/images/laptop.webp";
 
