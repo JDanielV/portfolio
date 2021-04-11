@@ -1187,6 +1187,14 @@
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .torum-ambassadors__main-wrapper {
+    width: 71.25rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 .torum-ambassadors__title {
   width: 80%;
   text-align: center;
@@ -1195,8 +1203,20 @@
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .torum-ambassadors__title {
+    font-size: 2.187rem;
+  }
+}
+
 .torum-ambassadors__text-wrapper {
   margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .torum-ambassadors__text-wrapper {
+    padding: 0 1rem;
+  }
 }
 
 .torum-ambassadors__text {
@@ -1207,6 +1227,12 @@
   line-height: 1.9rem;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .torum-ambassadors__text {
+    font-size: 1.25rem;
+  }
 }
 
 .torum-ambassadors__list-wrapper {
@@ -1227,6 +1253,18 @@
   padding: 0;
   width: 80%;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .torum-ambassadors__list-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 97%;
+  }
 }
 
 .torum-ambassadors__list-item {
@@ -1251,6 +1289,13 @@
 
 .torum-ambassadors__list-item:hover {
   background: rgba(219, 211, 211, 0.1);
+}
+
+@media (min-width: 768px) {
+  .torum-ambassadors__list-item {
+    width: 11rem;
+    height: 15rem;
+  }
 }
 
 .torum-ambassadors__item-imgs-wrapper {
@@ -1291,12 +1336,25 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .torum-ambassadors__item-name {
+    font-size: 1.1rem;
+  }
+}
+
 .torum-ambassadors__item-subtitle {
   display: inline-block;
   width: 100%;
   text-align: center;
   margin-top: 0.5rem;
   font-size: 15px;
+  color: #d2d2d2;
+}
+
+@media (min-width: 768px) {
+  .torum-ambassadors__item-subtitle {
+    font-size: 14px;
+  }
 }
 
 @font-face {
@@ -1323,6 +1381,12 @@
           box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  .torum-featured {
+    padding: 6rem 2rem;
+  }
+}
+
 .torum-featured__main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1339,14 +1403,42 @@
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .torum-featured__main-wrapper {
+    width: 71.25rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .torum-featured__title {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .torum-featured__title {
+    font-size: 2.187rem;
+  }
 }
 
 .torum-featured__articles-list {
   list-style: none;
   padding: 0;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .torum-featured__articles-list {
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .torum-featured__list-item {
@@ -1358,6 +1450,17 @@
   max-width: 21.875rem;
   height: 9.18rem;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .torum-featured__list-item {
+    width: 100%;
+    max-width: 10.3rem;
+    height: 4.2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
 }
 
 .torum-featured__list-item-highlight {
@@ -1404,6 +1507,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat;
+  background-position: top;
+}
+
+@media (min-width: 768px) {
+  .torum-sign-up {
+    height: 48rem;
+  }
 }
 
 .torum-sign-up__main-wrapper {
@@ -1422,9 +1533,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat;
-  background-position: top;
   padding: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .torum-sign-up__main-wrapper {
+    height: 34rem;
+    padding-top: 10rem;
+  }
 }
 
 .torum-sign-up__title-divider-wrapper {
@@ -1444,12 +1560,24 @@
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .torum-sign-up__title-divider-wrapper {
+    margin-bottom: 0;
+  }
+}
+
 .torum-sign-up__title {
   color: white;
   margin: 0;
   padding: 0 2rem;
   text-align: center;
   line-height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .torum-sign-up__title {
+    font-size: 2.187rem;
+  }
 }
 
 @font-face {
@@ -1476,6 +1604,7 @@
 
 .torum-footer__text-wrapper {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .torum-footer__text {
@@ -1497,6 +1626,15 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .torum-footer__icons-wrapper {
+    height: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .torum-footer__icon {

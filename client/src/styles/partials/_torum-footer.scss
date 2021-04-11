@@ -10,6 +10,7 @@
 
     &__text-wrapper {
         margin-bottom: 1rem;
+        text-align: center;
     }
 
     &__text {
@@ -24,6 +25,11 @@
         align-items: space-between;
         flex-wrap: wrap;
         height: 4.5rem;
+
+        @include tablet {
+            height: 2rem;
+            align-items: center;
+        }
     }
 
     &__icon {

@@ -9,15 +9,29 @@
     padding: 3rem 2rem;
     box-sizing: border-box;
 
+    @include tablet {
+        padding: 6rem 2rem;
+    }
+
     &__main-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            width: 71.25rem;
+            max-width: 100%;
+            margin: 0 auto;
+          }
     }
 
     &__title {
         margin: 0;
+
+        @include tablet {
+            font-size: $section-title;
+        }
     }
 
     &__articles-list {
@@ -25,6 +39,12 @@
         padding: 0;
         width: 100%;
 
+        @include tablet {
+            margin-top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__list-item {
@@ -36,6 +56,15 @@
         max-width: 21.875rem;
         height: 9.18rem;
         position: relative;
+
+        @include tablet {
+            width: 100%;
+            max-width: 10.3rem;
+            height: 4.2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+        }
     }
 
     &__list-item-highlight {

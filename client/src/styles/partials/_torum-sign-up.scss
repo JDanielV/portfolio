@@ -5,10 +5,15 @@
 .torum-sign-up {
     background: black;
     font-family: "Poppins-Regular";
-    // padding: 4rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat;
+    background-position: top;
+
+    @include tablet {
+        height: 48rem;
+    }
 
     &__main-wrapper {
         width: 100%;
@@ -17,9 +22,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat;
-        background-position: top;
+        
         padding: 5rem 1rem;
+
+        @include tablet {
+            height: 34rem;
+            padding-top: 10rem;
+        }
     }
 
     &__title-divider-wrapper {
@@ -28,6 +37,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 
     &__title {
@@ -36,6 +49,10 @@
         padding: 0 2rem;
         text-align: center;
         line-height: 2.5rem;
+
+        @include tablet {
+            font-size: $section-title;
+        }
     }
 
 }
