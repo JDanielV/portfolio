@@ -16,6 +16,11 @@
   overflow: hidden;
   width: 100%;
 
+  @include tablet {
+    padding: 4rem 2.5rem 4rem 2.5rem;
+    height: auto;
+  }
+
   @include desktop {
     flex-direction: row;
     justify-content: center;
@@ -57,8 +62,11 @@
     font-family: "Poppins-Semi-bold";
     margin: 2rem 0 0 0;
 
-    @include desktop {
+    @include tablet {
       font-size: 2.5rem;
+    }
+
+    @include desktop {
       font-family: "Poppins-Semi-bold";
       margin: 0;
     }
@@ -69,8 +77,11 @@
     margin: 0;
     line-height: 1.8rem;
 
-    @include desktop {
+    @include tablet {
       font-size: 1rem;
+    }
+
+    @include desktop {
       margin: 0;
       line-height: 1.8rem;
     }
@@ -95,6 +106,10 @@
     text-transform: uppercase;
     margin-top: 2rem;
     font-family: "Poppins-Regular";
+
+    @include tablet {
+      margin-top: 0;
+    }
 
     @include desktop {
       width: 16.9rem;

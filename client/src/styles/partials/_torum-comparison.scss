@@ -29,21 +29,47 @@
 
   &__left-content-wrapper {
     padding: 4.5rem 1rem;
+
+    @include tablet {
+      padding: 4.5rem 2.5rem;
+    }
   }
 
   &__right-content-wrapper {
     padding: 4.5rem 1rem;
+
+    @include tablet {
+      padding: 4.5rem 2rem;
+    }
   }
 
   &__left-title {
     text-align: center;
     font-weight: 100;
     margin: 1.5rem 0 0 0;
+    
+    @include tablet {
+      font-size: 1.8rem;
+      text-align: start;
+
+    }
+  }
+
+  &__left-subtitle-text-wrapper {
+
+    @include tablet {
+      text-align: start;
+      margin-left: 2.5rem;
+    }
   }
 
   &__left-subtitle {
     margin: 1rem auto;
     width: 90%;
+
+    @include tablet {
+      margin-left: 0;
+    }
   }
 
   &__left-text {
@@ -56,6 +82,18 @@
 
   &__left-feature-block {
     margin: 2rem 0;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__left-image-wrapper {
+
+    @include tablet {
+      padding-bottom: 3.5rem;
+    }
   }
 
   &__left-image {
@@ -65,6 +103,11 @@
     color: white;
     width: 3rem;
     height: 3rem;
+
+    @include tablet {
+      width: 3.3rem;
+    height: 3.3rem;
+    }
   }
 
   &__vs-wrapper {
