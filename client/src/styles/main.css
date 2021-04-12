@@ -738,6 +738,7 @@
     display: -ms-flexbox;
     display: flex;
     width: 50%;
+    max-width: 40.3rem;
   }
 }
 
@@ -1048,6 +1049,7 @@
 @media (min-width: 1440px) {
   .comparison {
     height: 95vh;
+    max-height: 63.4rem;
   }
 }
 
@@ -1061,6 +1063,7 @@
 @media (min-width: 1440px) {
   .comparison__background-wrapper {
     background-position: top;
+    background-size: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

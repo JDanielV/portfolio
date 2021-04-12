@@ -13,6 +13,7 @@
 
   @include desktop {
     height: 95vh;
+    max-height: 63.4rem;
   }
 
   &__background-wrapper {
@@ -24,6 +25,7 @@
 
     @include desktop {
       background-position: top;
+      background-size: 100%;
       display: flex;
     }
   }

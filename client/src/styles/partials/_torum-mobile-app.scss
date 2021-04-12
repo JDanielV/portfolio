@@ -51,7 +51,8 @@
 
     @include desktop {
       display: flex;
-      width: 50%
+      width: 50%;
+      max-width: 40.3rem
 
     }
   }
