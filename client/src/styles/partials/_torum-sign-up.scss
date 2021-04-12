@@ -53,6 +53,10 @@
         @include tablet {
             font-size: $section-title;
         }
+
+        @include desktop {
+            width: 50rem;
+        }
     }
 
 }

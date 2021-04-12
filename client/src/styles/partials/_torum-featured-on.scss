@@ -58,12 +58,16 @@
         position: relative;
 
         @include tablet {
-            width: 100%;
             max-width: 10.3rem;
             height: 4.2rem;
             border-radius: 8px;
             margin-bottom: 2rem;
             margin-left: 1rem;
+        }
+
+        @include desktop {
+          max-width: 16rem;
+          height: 6.7rem;
         }
     }
 

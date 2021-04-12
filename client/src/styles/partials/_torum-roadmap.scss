@@ -68,36 +68,62 @@
   &__features-slider {
     width: fit-content;
     display: flex;
-    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0);
 
     @include tablet {
       margin-top: 3rem;
     }
+
+    @include desktop {
+      margin-left: 1.2rem;
+    }
+  }
+
+  &__feature-container {
+    width: 100vw;
+    min-width: 100vw;
+    padding: 0 1rem;
+    height: 21.75rem;
+    min-height: 21.75rem;
+    box-sizing: border-box;
+
+    @include tablet {
+      min-width: 50%;
+    }
+
+    @include desktop {
+      min-width: 33%;
+    }
   }
 
   &__feature-wrapper {
-    height: 21.75rem;
-    min-height: 21.75rem;
-    width: 21.75rem;
-    min-width: 21.75rem;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     transition: all 0.2s ease-in-out;
     border-radius: 4px;
-    margin-left: 2.3rem;
 
     &:hover {
       background: rgba(219, 211, 211, 0.1);
     }
+
+    
   }
 
   &__feature-title {
     font-size: $feature-name-mobile;
     text-align: center;
     padding: 0 2rem;
+
+    @include desktop {
+      padding: 0 3rem;
+    }
   }
 }

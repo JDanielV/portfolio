@@ -35,7 +35,7 @@ const Features = () => {
         },
         {
             title: "Introducing XTM",
-            subtitle: "XTM is an ERC-20 utility token that acts as the payment medium for various features and functionalities, serving as the backbone of TORUM's ecosystem.",
+            subtitle: "XTM is a BEP-20 utility token built on Binance Smart Chain (cross-chain swap enabled on Ethereum chain) that acts as the payment medium for various features and functionalities, serving as the backbone of TORUM's ecosystem.",
             features: [
                 {
                     title: "support functionality",

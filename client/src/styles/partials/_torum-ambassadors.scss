@@ -54,6 +54,10 @@
     @include tablet {
       font-size: $section-subtitle;
     }
+
+    @include desktop {
+      padding: 0 5rem;
+    }
   }
 
   &__list-wrapper {
@@ -91,6 +95,10 @@
     @include tablet {
       width: 11rem;
       height: 15rem;
+    }
+
+    @include desktop {
+      width: 15rem;
     }
   }
 

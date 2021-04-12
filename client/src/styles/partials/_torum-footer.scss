@@ -8,6 +8,13 @@
     padding: 1rem 2.5rem;
     font-family: "Poppins-Regular";
 
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 6.25rem;
+    }
+
     &__text-wrapper {
         margin-bottom: 1rem;
         text-align: center;
@@ -17,6 +24,10 @@
         font-size: 14px;
         text-align: center;
         display: inline-block;
+
+        @include desktop {
+            font-size: 16px;
+        }
     }
 
     &__icons-wrapper {

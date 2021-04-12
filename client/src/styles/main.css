@@ -418,7 +418,7 @@
 
 @media (min-width: 1440px) {
   .torum-features {
-    padding: 14rem 0 10rem 0;
+    padding: 15rem 0 10rem 0;
   }
 }
 
@@ -694,7 +694,8 @@
             justify-content: center;
     font-family: "Poppins-Regular";
     padding-left: 15rem;
-    height: 44.5rem;
+    height: 36rem;
+    padding-left: 7rem;
   }
 }
 
@@ -728,7 +729,6 @@
             justify-content: space-between;
     height: 22rem;
     width: 33.75rem;
-    padding: 0 0 3.5rem 5rem;
   }
 }
 
@@ -737,12 +737,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 50%;
   }
 }
 
 .torum-mobile-app__right-img {
-  -webkit-transform: translateY(15%);
-          transform: translateY(15%);
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  width: 110%;
 }
 
 .torum-mobile-app__title {
@@ -940,7 +942,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media (min-width: 768px) {
@@ -949,11 +954,38 @@
   }
 }
 
-.torum-roadmap__feature-wrapper {
+@media (min-width: 1440px) {
+  .torum-roadmap__features-slider {
+    margin-left: 1.2rem;
+  }
+}
+
+.torum-roadmap__feature-container {
+  width: 100vw;
+  min-width: 100vw;
+  padding: 0 1rem;
   height: 21.75rem;
   min-height: 21.75rem;
-  width: 21.75rem;
-  min-width: 21.75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .torum-roadmap__feature-container {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .torum-roadmap__feature-container {
+    min-width: 33%;
+  }
+}
+
+.torum-roadmap__feature-wrapper {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -969,11 +1001,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-radius: 4px;
-  margin-left: 2.3rem;
 }
 
 .torum-roadmap__feature-wrapper:hover {
@@ -984,6 +1015,12 @@
   font-size: 1.375rem;
   text-align: center;
   padding: 0 2rem;
+}
+
+@media (min-width: 1440px) {
+  .torum-roadmap__feature-title {
+    padding: 0 3rem;
+  }
 }
 
 @font-face {
@@ -1008,6 +1045,12 @@
   color: white;
 }
 
+@media (min-width: 1440px) {
+  .comparison {
+    height: 95vh;
+  }
+}
+
 .comparison__background-wrapper {
   background: url("./../assets/torum-assets/images/powerful-bg.webp") no-repeat center;
   width: 100%;
@@ -1015,12 +1058,39 @@
   position: relative;
 }
 
+@media (min-width: 1440px) {
+  .comparison__background-wrapper {
+    background-position: top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .comparison__left {
   background: rgba(111, 0, 119, 0.85);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1440px) {
+  .comparison__left {
+    padding: 0 2rem 0 5rem;
+    background: rgba(0, 32, 87, 0.85);
+  }
 }
 
 .comparison__right {
   background: rgba(0, 32, 87, 0.85);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1440px) {
+  .comparison__right {
+    padding: 0 5rem 0 2rem;
+    background: rgba(111, 0, 119, 0.85);
+  }
 }
 
 .comparison__left-content-wrapper {
@@ -1033,6 +1103,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .comparison__left-content-wrapper {
+    padding: 4.5rem 3.5rem;
+  }
+}
+
 .comparison__right-content-wrapper {
   padding: 4.5rem 1rem;
 }
@@ -1040,6 +1116,12 @@
 @media (min-width: 768px) {
   .comparison__right-content-wrapper {
     padding: 4.5rem 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .comparison__right-content-wrapper {
+    padding: 4.5rem 3.5rem;
   }
 }
 
@@ -1141,6 +1223,13 @@
           align-items: center;
 }
 
+@media (min-width: 1440px) {
+  .comparison__vs-wrapper {
+    top: 50%;
+    bottom: 50%;
+  }
+}
+
 .comparison__vs-text {
   font-size: 1.2rem;
   letter-spacing: 3px;
@@ -1235,6 +1324,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .torum-ambassadors__text {
+    padding: 0 5rem;
+  }
+}
+
 .torum-ambassadors__list-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1295,6 +1390,12 @@
   .torum-ambassadors__list-item {
     width: 11rem;
     height: 15rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .torum-ambassadors__list-item {
+    width: 15rem;
   }
 }
 
@@ -1454,12 +1555,18 @@
 
 @media (min-width: 768px) {
   .torum-featured__list-item {
-    width: 100%;
     max-width: 10.3rem;
     height: 4.2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
     margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .torum-featured__list-item {
+    max-width: 16rem;
+    height: 6.7rem;
   }
 }
 
@@ -1580,6 +1687,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .torum-sign-up__title {
+    width: 50rem;
+  }
+}
+
 @font-face {
   font-family: "Poppins-Semi-bold";
   src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
@@ -1602,6 +1715,20 @@
   font-family: "Poppins-Regular";
 }
 
+@media (min-width: 1440px) {
+  .torum-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 6.25rem;
+  }
+}
+
 .torum-footer__text-wrapper {
   margin-bottom: 1rem;
   text-align: center;
@@ -1611,6 +1738,12 @@
   font-size: 14px;
   text-align: center;
   display: inline-block;
+}
+
+@media (min-width: 1440px) {
+  .torum-footer__text {
+    font-size: 16px;
+  }
 }
 
 .torum-footer__icons-wrapper {

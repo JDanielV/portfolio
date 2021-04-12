@@ -49,9 +49,11 @@ const RoadmapSection = () => {
                 <div className="torum-roadmap__features-slider">
                     {roadmapFeatures.map((feature) => {
                         return (
-                            <div className="torum-roadmap__feature-wrapper" key={feature.title}>
-                                <img className="torum-roadmap__feature-img" src={feature.image} alt={feature.imageAlt} />
-                                <h3 className="torum-roadmap__feature-title">{feature.title}</h3>
+                            <div className="torum-roadmap__feature-container">
+                                <div className="torum-roadmap__feature-wrapper" key={feature.title}>
+                                    <img className="torum-roadmap__feature-img" src={feature.image} alt={feature.imageAlt} />
+                                    <h3 className="torum-roadmap__feature-title">{feature.title}</h3>
+                                </div>
                             </div>
                         )
                     })}
