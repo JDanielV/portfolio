@@ -18,6 +18,10 @@
     &__text-wrapper {
         margin-bottom: 1rem;
         text-align: center;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
     }
 
     &__text {

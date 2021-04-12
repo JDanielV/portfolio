@@ -1614,7 +1614,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat;
   background-position: top;
 }
 
@@ -1640,13 +1639,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("./../assets/torum-assets/images/torum-sign-up-bg.webp") no-repeat top;
   padding: 5rem 1rem;
 }
 
 @media (min-width: 768px) {
   .torum-sign-up__main-wrapper {
-    height: 34rem;
-    padding-top: 10rem;
+    background-position: top;
+    height: 100%;
+    padding: 15rem 1rem 12rem 1rem;
   }
 }
 
@@ -1732,6 +1733,12 @@
 .torum-footer__text-wrapper {
   margin-bottom: 1rem;
   text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .torum-footer__text-wrapper {
+    margin-bottom: 0;
+  }
 }
 
 .torum-footer__text {
