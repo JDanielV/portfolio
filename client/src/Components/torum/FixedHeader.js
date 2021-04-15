@@ -5,21 +5,31 @@ import LogoHeader from "../../assets/torum-assets/images/torum-logo-header.png";
 const FixedHeader = ({ scrollThreshold }) => {
 
     const [fixedHeaderClasses, setFixedHeaderClasses] = useState("torum-header-fixed torum-header-fixed--hide");
-
-    let timer;
+    const [firstLoad, setFirstLoad] = useState(false);
 
     useEffect(() => {
-        if (!scrollThreshold) {
-            clearTimeout(timer);
+        window.clearTimeout();
+        if (scrollThreshold && firstLoad) {
+            setFixedHeaderClasses("torum-header-fixed--display");
+            window.setTimeout(() => {
+                setFixedHeaderClasses("torum-header-fixed");
+            }, 100);
+            console.log("scroll threshold" + scrollThreshold);
+        }
+        setFirstLoad(true);
+    }, []);
+
+    useEffect(() => {
+        window.clearTimeout();
+        if (!scrollThreshold && firstLoad) {
             setFixedHeaderClasses('torum-header-fixed torum-header-fixed--hide');
-            timer = setTimeout(() => {
+            window.setTimeout(() => {
                 setFixedHeaderClasses("torum-header-fixed torum-header-fixed--hide torum-header-fixed--no-display");
             }, 300);
         }
-        else {
-            clearTimeout(timer);
+        else if (scrollThreshold && firstLoad) {
             setFixedHeaderClasses("torum-header-fixed--display");
-            timer = setTimeout(() => {
+            window.setTimeout(() => {
                 setFixedHeaderClasses("torum-header-fixed");
             }, 100);
         }

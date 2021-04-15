@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../../styles/main.css";
 import LogoHeader from "../../assets/torum-assets/images/torum-logo-header.png";
 import FixedHeader from "./FixedHeader";
