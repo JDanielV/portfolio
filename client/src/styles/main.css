@@ -241,6 +241,8 @@
 @media (min-width: 1440px) {
   .torum-landing__title-wrapper {
     height: 4.5rem;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
   }
 }
 
@@ -248,6 +250,31 @@
   font-size: 1.75rem;
   margin: 0 0 2rem 0;
   font-family: "Poppins-Semi-bold";
+}
+
+.torum-landing__title::after {
+  content: "";
+  border-right: 5px solid white;
+  -webkit-animation: blinking-cursor .5s infinite ease;
+          animation: blinking-cursor .5s infinite ease;
+}
+
+@-webkit-keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {

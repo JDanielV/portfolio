@@ -48,13 +48,12 @@
   }
 
   &__title-wrapper {
-
     @include tablet {
-      // font-size: 2.5rem;
     }
 
     @include desktop {
       height: 4.5rem;
+      transform: translateX(-2rem);
     }
   }
 
@@ -62,7 +61,21 @@
     font-size: 1.75rem;
     margin: 0 0 2rem 0;
     font-family: "Poppins-Semi-bold";
-    
+
+    &::after {
+      content: "";
+      border-right: 5px solid white;
+      animation: blinking-cursor .5s infinite ease;
+    }
+
+    @keyframes blinking-cursor {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     @include tablet {
       font-size: 2.5rem;
