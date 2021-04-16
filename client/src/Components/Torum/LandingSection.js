@@ -1,15 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
 import LaptopImg from "../../assets/torum-assets/images/laptop.webp";
+import Typewriter from "./Typewriter";
 
 const LandingSection = (props) => {
+
+    // const textsArray = ["Community Builders", "Content Writers", "Enthusiasts", "Project Owners"]
+    // const [letters, setLetters] = useState("");
+    // const [currentText, setCurrentText] = useState("");
+
+    // let textIndex = 0;
+    // // let currentText = "";
+    // let letterIndex = 0;
+    // let typeSpeed = 100;
+
+    // const typeWriter = () => {
+    //     let localLetters = letters;
+    //     let localCurrentText = currentText;
+
+    //     if (textIndex === textsArray.length)
+    //         textIndex = 0;
+
+    //     setCurrentText(textsArray[textIndex]);
+    //     localLetters = localCurrentText.slice(0, ++letterIndex);
+    //     setLetters(localLetters);
+
+    //     if (localLetters === localCurrentText) {
+    //         textIndex++;
+    //         letterIndex = 0;
+    //     }
+    //     setTimeout(typeWriter, typeSpeed);
+    // };
+
+    // useEffect(() => {
+    //     typeWriter();
+    //     console.log("typewriter started");
+    // }, []);
 
     return (
         <section className="torum-landing">
             <div className="torum-landing__main">
                 <div className="torum-landing__main-wrapper">
                     <div className="torum-landing__title-wrapper">
-                        <h1 className="torum-landing__title">Community Building</h1>
+                        <Typewriter text={"Hello  there"} typeSpeed={100} />
                     </div>
                     <div className="torum-landing__subtitle-wrapper">
                         <span className="torum-landing__subtitle">

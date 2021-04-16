@@ -47,10 +47,22 @@
     }
   }
 
+  &__title-wrapper {
+
+    @include tablet {
+      // font-size: 2.5rem;
+    }
+
+    @include desktop {
+      height: 4.5rem;
+    }
+  }
+
   &__title {
     font-size: 1.75rem;
     margin: 0 0 2rem 0;
     font-family: "Poppins-Semi-bold";
+    
 
     @include tablet {
       font-size: 2.5rem;
@@ -58,6 +70,7 @@
 
     @include desktop {
       font-size: 3rem;
+      height: 4.5rem;
     }
   }
 

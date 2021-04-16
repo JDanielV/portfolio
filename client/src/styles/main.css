@@ -238,6 +238,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .torum-landing__title-wrapper {
+    height: 4.5rem;
+  }
+}
+
 .torum-landing__title {
   font-size: 1.75rem;
   margin: 0 0 2rem 0;
@@ -253,6 +259,7 @@
 @media (min-width: 1440px) {
   .torum-landing__title {
     font-size: 3rem;
+    height: 4.5rem;
   }
 }
 
