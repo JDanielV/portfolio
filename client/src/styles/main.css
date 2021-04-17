@@ -1097,7 +1097,7 @@
 @media (min-width: 1440px) {
   .comparison__background-wrapper {
     background-position: top;
-    background-size: 100%;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
