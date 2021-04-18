@@ -26,7 +26,7 @@
     justify-content: center;
     font-family: "Poppins-Regular";
     padding-left: 15rem;
-    height: 36rem;
+    height: 42rem;
     padding-left: 7rem;
   }
 
@@ -43,11 +43,14 @@
       flex-direction: column;
       justify-content: space-between;
       height: 22rem;
-      width: 33.75rem;
+      width: 28.75rem;
+      margin-right: 7rem;
     }
   }
 
   &__right-wrapper {
+
+    position: relative;
 
     @include desktop {
       display: flex;
@@ -60,6 +63,216 @@
   &__right-img {
     transform: translateY(20%);
     width: 110%;
+
+    @include desktop {
+      width: 130%;
+    }
+
+    &-floating-icon {
+
+      &-neo {
+        position: absolute;
+        bottom: 6rem;
+        left: 25%;
+      }
+
+      &-usdt {
+        position: absolute;
+        bottom: 6.5rem;
+        left: 33%;
+      }
+
+      &-torum {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 45%;
+      }
+
+      &-monero {
+        position: absolute;
+        bottom: 4.5rem;
+        left: 40%;
+      }
+
+      &-shtcoin {
+        position: absolute;
+        bottom: 6rem;
+        left: 53%;
+      }
+
+      &-btc {
+        position: absolute;
+        bottom: 7.5rem;
+        left: 60%;
+      }
+
+      &-eth {
+        position: absolute;
+        bottom: 7rem;
+        left: 46%;
+      }
+    }
+
+    @keyframes neo-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes usdt-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes torum-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes monero-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes shtcoin-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes btc-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
+
+    @keyframes eth-icon-animation {
+      0% {
+        transform: translate();
+        opacity: 1;
+
+      }
+      25% {
+        transform: translate();
+      }
+      50% {
+        transform: translate();
+
+      }
+      75% {
+        transform: translate();
+
+      }
+      100% {
+        transform: translate();
+        opacity: 0;
+      }
+    }
   }
 
   &__title {
@@ -122,3 +335,4 @@
     }
   }
 }
+

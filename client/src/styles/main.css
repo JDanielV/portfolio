@@ -728,7 +728,7 @@
             justify-content: center;
     font-family: "Poppins-Regular";
     padding-left: 15rem;
-    height: 36rem;
+    height: 42rem;
     padding-left: 7rem;
   }
 }
@@ -762,8 +762,13 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 22rem;
-    width: 33.75rem;
+    width: 28.75rem;
+    margin-right: 7rem;
   }
+}
+
+.torum-mobile-app__right-wrapper {
+  position: relative;
 }
 
 @media (min-width: 1440px) {
@@ -780,6 +785,404 @@
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
   width: 110%;
+}
+
+@media (min-width: 1440px) {
+  .torum-mobile-app__right-img {
+    width: 130%;
+  }
+}
+
+.torum-mobile-app__right-img-floating-icon-neo {
+  position: absolute;
+  bottom: 6rem;
+  left: 25%;
+}
+
+.torum-mobile-app__right-img-floating-icon-usdt {
+  position: absolute;
+  bottom: 6.5rem;
+  left: 33%;
+}
+
+.torum-mobile-app__right-img-floating-icon-torum {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 45%;
+}
+
+.torum-mobile-app__right-img-floating-icon-monero {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 40%;
+}
+
+.torum-mobile-app__right-img-floating-icon-shtcoin {
+  position: absolute;
+  bottom: 6rem;
+  left: 53%;
+}
+
+.torum-mobile-app__right-img-floating-icon-btc {
+  position: absolute;
+  bottom: 7.5rem;
+  left: 60%;
+}
+
+.torum-mobile-app__right-img-floating-icon-eth {
+  position: absolute;
+  bottom: 7rem;
+  left: 46%;
+}
+
+@-webkit-keyframes neo-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes neo-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes usdt-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes usdt-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes torum-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes torum-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes monero-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes monero-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shtcoin-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes shtcoin-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes btc-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes btc-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes eth-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
+}
+
+@keyframes eth-icon-animation {
+  0% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  50% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  75% {
+    -webkit-transform: translate();
+            transform: translate();
+  }
+  100% {
+    -webkit-transform: translate();
+            transform: translate();
+    opacity: 0;
+  }
 }
 
 .torum-mobile-app__title {
