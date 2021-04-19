@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../styles/main.css";
 import LaptopImg from "../../assets/torum-assets/images/laptop.webp";
 import Typewriter from "./Typewriter";
@@ -6,6 +6,8 @@ import Typewriter from "./Typewriter";
 const LandingSection = (props) => {
 
     const typewriterStrings = ["Crypto Community Builders", "Crypto Enthusiasts", "Crypto Content Writers", "Crypto Project Owners"];
+
+    const [buttonHover, setButtonHover] = useState(false);
 
     return (
         <section className="torum-landing">
@@ -20,8 +22,8 @@ const LandingSection = (props) => {
                         </span>
                     </div>
                     <div className="torum-landing__cta-section-wrapper">
-                        <button className="torum-landing__cta-button">
-                            <div className="torum-landing__cta-background" />
+                        <button className="torum-landing__cta-button" onMouseEnter={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)}>
+                            <div className={buttonHover ? "torum-landing__cta-background-hover" : "torum-landing__cta-background"} />
                             <span className="torum-landing__cta-button-text">Sign up and get free crypto</span>
                         </button>
                         <div className="torum-landing__cta-text-wrapper">

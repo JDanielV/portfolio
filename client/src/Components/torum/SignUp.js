@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../styles/main.css";
 
 const SignUpSection = () => {
+
+    const [buttonHover, setButtonHover] = useState(false);
+
     return (
         <section className="torum-sign-up">
             <div className="torum-sign-up__main-wrapper">
@@ -11,8 +14,8 @@ const SignUpSection = () => {
                 </h2>
                     <div className="torum-features__divider" />
                 </div>
-                <div className="torum-landing__cta-button">
-                    <div className="torum-landing__cta-background" />
+                <div className="torum-landing__cta-button" onMouseEnter={() => setButtonHover(true)} onMouseLeave={() => setButtonHover(false)}>
+                    <div className={buttonHover ? "torum-landing__cta-background-hover" : "torum-landing__cta-background"} />
                     <span className="torum-landing__cta-button-text">create a free account</span>
                 </div>
             </div>

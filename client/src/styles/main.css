@@ -349,6 +349,12 @@
           align-items: center;
   position: relative;
   margin-bottom: 1.3rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.torum-landing__cta-button:hover {
+  color: white;
 }
 
 @media (min-width: 1440px) {
@@ -364,6 +370,13 @@
   width: 120%;
   height: 100%;
   position: absolute;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.torum-landing__cta-background-hover {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .torum-landing__cta-button-text {

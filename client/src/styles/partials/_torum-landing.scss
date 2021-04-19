@@ -127,6 +127,11 @@
       align-items: center;
       position: relative;
       margin-bottom: 1.3rem;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: white;
+      }
 
       @include desktop {
         width: 27.5rem;
@@ -140,6 +145,11 @@
       width: 120%;
       height: 100%;
       position: absolute;
+      transition: all .4s ease-in-out;
+
+      &-hover {
+        transform:translateX(-100%);
+      }
     }
 
     &-button-text {
