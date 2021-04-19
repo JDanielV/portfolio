@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
 import MiningImg from "../../assets/torum-assets/images/mining.webp";
 import MurotImg from "../../assets/torum-assets/images/murot.webp";
@@ -77,107 +76,22 @@ const RoadmapSection = () => {
         },
     ];
 
-    let slide;
-    let slides = []
+    let slidesPerView = 1;
 
     switch (breakpoint) {
         case 'mobile':
-            slide =
-                roadmapFeatures.map((feature) => {
-                    return (
-                        <SwiperSlide key={feature.title}>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={feature.title}>
-                                    <img className="torum-roadmap__feature-img" src={feature.image} alt={feature.imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{feature.title}</h3>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    )
-                })
+            slidesPerView = 1;
             break;
 
         case 'tablet':
-            slides = [
-                [
-                    roadmapFeatures[0],
-                    roadmapFeatures[1]
-                ],
-                [
-                    roadmapFeatures[2],
-                    roadmapFeatures[3]
-                ],
-                [
-                    roadmapFeatures[4],
-                    roadmapFeatures[5]
-                ],
-            ]
-
-            slide =
-                slides.map((slide) => {
-                    return (
-                        <SwiperSlide>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={slide[0].title}>
-                                    <img className="torum-roadmap__feature-img" src={slide[0].image} alt={slide[0].imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{slide[0].title}</h3>
-                                </div>
-                            </div>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={slide[1].title}>
-                                    <img className="torum-roadmap__feature-img" src={slide[1].image} alt={slide[1].imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{slide[1].title}</h3>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    )
-                });
+            slidesPerView = 2;
             break;
 
         case 'desktop':
-            slides = [
-                [
-                    roadmapFeatures[0],
-                    roadmapFeatures[1],
-                    roadmapFeatures[2]
-                ],
-                [
-                    roadmapFeatures[3],
-                    roadmapFeatures[4],
-                    roadmapFeatures[5]
-                ]
-            ];
-
-            slide =
-                slides.map((slide) => {
-
-                    return (
-                        <SwiperSlide key={slide[0].title}>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={slide[0].title}>
-                                    <img className="torum-roadmap__feature-img" src={slide[0].image} alt={slide[0].imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{slide[0].title}</h3>
-                                </div>
-                            </div>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={slide[1].title}>
-                                    <img className="torum-roadmap__feature-img" src={slide[1].image} alt={slide[1].imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{slide[1].title}</h3>
-                                </div>
-                            </div>
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={slide[2].title}>
-                                    <img className="torum-roadmap__feature-img" src={slide[2].image} alt={slide[2].imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{slide[2].title}</h3>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    )
-                });
-
+            slidesPerView = 3;
             break;
         default:
-            slide = [];
+            slidesPerView = 1;
     }
 
     return (
@@ -189,10 +103,10 @@ const RoadmapSection = () => {
                     <p className="torum-roadmap__text">
                         Future releases are scheduled to maximize XTM's usability as TORUM transforms into a comprehensive decentralized ecosystem.
                     </p>
-                    <span className="torum-roadmap__span">(Swipe to view more)</span>
+                    <span className="torum-roadmap__span">(Swipe or drag click to view more)</span>
                 </div>
-                <Swiper id="torum-roadmap__features-slider">
-                    {/* {roadmapFeatures.map((feature) => {
+                <Swiper id="torum-roadmap__features-slider" slidesPerView={slidesPerView}>
+                    {roadmapFeatures.map((feature) => {
                         return (
                             <SwiperSlide key={feature.title}>
                                 <div className="torum-roadmap__feature-container">
@@ -203,21 +117,8 @@ const RoadmapSection = () => {
                                 </div>
                             </SwiperSlide>
                         )
-                    })} */}
-                    {slide}
+                    })};
                 </Swiper>
-                {/* <div className="torum-roadmap__features-slider">
-                    {roadmapFeatures.map((feature) => {
-                        return (
-                            <div className="torum-roadmap__feature-container">
-                                <div className="torum-roadmap__feature-wrapper" key={feature.title}>
-                                    <img className="torum-roadmap__feature-img" src={feature.image} alt={feature.imageAlt} />
-                                    <h3 className="torum-roadmap__feature-title">{feature.title}</h3>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div> */}
             </div>
         </section>
     )

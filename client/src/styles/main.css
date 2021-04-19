@@ -1509,8 +1509,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  max-width: 100vw;
   padding: 0 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
