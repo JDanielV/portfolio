@@ -797,390 +797,404 @@
   position: absolute;
   bottom: 6rem;
   left: 25%;
+  -webkit-animation: neo-icon-animation 5.5s infinite;
+          animation: neo-icon-animation 5.5s infinite;
 }
 
 .torum-mobile-app__right-img-floating-icon-usdt {
   position: absolute;
   bottom: 6.5rem;
   left: 33%;
+  -webkit-animation: usdt-icon-animation 5.1s infinite ease-out;
+          animation: usdt-icon-animation 5.1s infinite ease-out;
 }
 
 .torum-mobile-app__right-img-floating-icon-torum {
   position: absolute;
   bottom: 3.5rem;
   left: 45%;
+  -webkit-animation: torum-icon-animation 6.5s infinite ease-out;
+          animation: torum-icon-animation 6.5s infinite ease-out;
 }
 
 .torum-mobile-app__right-img-floating-icon-monero {
   position: absolute;
   bottom: 4.5rem;
   left: 40%;
+  -webkit-animation: monero-icon-animation 5.8s infinite ease-out;
+          animation: monero-icon-animation 5.8s infinite ease-out;
 }
 
 .torum-mobile-app__right-img-floating-icon-shtcoin {
   position: absolute;
   bottom: 6rem;
   left: 53%;
+  -webkit-animation: shtcoin-icon-animation 5.5s infinite ease-out;
+          animation: shtcoin-icon-animation 5.5s infinite ease-out;
 }
 
 .torum-mobile-app__right-img-floating-icon-btc {
   position: absolute;
   bottom: 7.5rem;
   left: 60%;
+  -webkit-animation: btc-icon-animation 5.2s infinite ease-out;
+          animation: btc-icon-animation 5.2s infinite ease-out;
 }
 
 .torum-mobile-app__right-img-floating-icon-eth {
   position: absolute;
   bottom: 7rem;
   left: 46%;
+  -webkit-animation: eth-icon-animation 7s infinite ease-out;
+          animation: eth-icon-animation 7s infinite ease-out;
 }
 
 @-webkit-keyframes neo-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 25%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 27%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 30%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 28%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 25%;
     opacity: 0;
   }
 }
 
 @keyframes neo-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 25%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 27%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 30%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 28%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 25%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes usdt-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 33%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 35%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 37%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 35%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 32%;
     opacity: 0;
   }
 }
 
 @keyframes usdt-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 33%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 35%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 37%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 35%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 32%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes torum-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 45%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 42%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 40%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 43%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 45%;
     opacity: 0;
   }
 }
 
 @keyframes torum-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 45%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 42%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 40%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 43%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 45%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes monero-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 40%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 38%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 36%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 37%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 39%;
     opacity: 0;
   }
 }
 
 @keyframes monero-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 40%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 38%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 36%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 37%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 39%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes shtcoin-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 53%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 55%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 56%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 53%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 52%;
     opacity: 0;
   }
 }
 
 @keyframes shtcoin-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 53%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 55%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 56%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 53%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-900%);
+            transform: translateY(-900%);
+    left: 52%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes btc-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 60%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 58%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 56%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 57%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-1150%);
+            transform: translateY(-1150%);
+    left: 59%;
     opacity: 0;
   }
 }
 
 @keyframes btc-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 60%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 58%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 56%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 57%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-1150%);
+            transform: translateY(-1150%);
+    left: 59%;
     opacity: 0;
   }
 }
 
 @-webkit-keyframes eth-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 46%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 48%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 50%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 48%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-1150%);
+            transform: translateY(-1150%);
+    left: 45%;
     opacity: 0;
   }
 }
 
 @keyframes eth-icon-animation {
   0% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
+    left: 46%;
   }
   25% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 48%;
+    opacity: .8;
   }
   50% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 50%;
   }
   75% {
-    -webkit-transform: translate();
-            transform: translate();
+    left: 48%;
   }
   100% {
-    -webkit-transform: translate();
-            transform: translate();
+    -webkit-transform: translateY(-1150%);
+            transform: translateY(-1150%);
+    left: 45%;
     opacity: 0;
   }
 }
