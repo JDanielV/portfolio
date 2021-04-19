@@ -355,6 +355,7 @@
 
 .torum-landing__cta-button:hover {
   color: white;
+  border: 2px solid white;
 }
 
 @media (min-width: 1440px) {
@@ -377,6 +378,7 @@
 .torum-landing__cta-background-hover {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  z-index: 0;
 }
 
 .torum-landing__cta-button-text {
