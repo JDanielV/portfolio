@@ -13,13 +13,15 @@ const HeroSection = () => {
                 </div>
                 <div className="portfolio-hero__hero-text-img-wrapper">
                     <div className="portfolio-hero__hero-text-wrapper">
-                        <span className="portfolio-hero__hero-text">Daniel Villaverde</span>
+                        <h1 className="portfolio-hero__hero-text">Daniel</h1>
+                        <h1 className="portfolio-hero__hero-text">Villaverde</h1>
                     </div>
                     <div className="portfolio-hero__img-wrapper">
                         <img className="porfolio-hero__img" src="" alt="" />
                     </div>
                 </div>
             </div>
+
         </section>
     )
 };
