@@ -1,5 +1,5 @@
 import React from 'react';
-import TorumContainer from './Components/torum/TorumContainer';
+// import TorumContainer from './Components/torum/TorumContainer';
 import PortfolioContainer from './Components/portfolio/PortfolioContainer';
 
 function App() {

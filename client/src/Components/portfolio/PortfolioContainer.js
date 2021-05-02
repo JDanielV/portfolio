@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import AboutMe from "./AboutMe";
 import ProjectsSection from "./ProjectsSection";
 import Contact from "./Contact";
+import ParticleBg from "./ParticlesBg";
 
 
 const PortfolioContainer = () => {
@@ -30,6 +31,7 @@ const PortfolioContainer = () => {
 
     return (
         <div className="portfolio-container">
+            <ParticleBg />
             <Header />
             <HeroSection />
             <AboutMe />
