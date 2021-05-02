@@ -10,7 +10,7 @@ import FeaturedOnSection from './FeaturedOn';
 import SignUpSection from './SignUp';
 import FooterSection from './Footer';
 
-function TorumContainer() {
+const TorumContainer = () => {
 
     const [scrollThreshold, setScrollThreshold] = useState({
         scrollThreshold: false
@@ -33,7 +33,7 @@ function TorumContainer() {
     };
 
     return (
-        <div className="App">
+        <div className="torum-container">
             <Header scrollThreshold={scrollThreshold.scrollThreshold} />
             <LandingSection />
             <Features />
