@@ -5,6 +5,8 @@ import AboutMe from "./AboutMe";
 import ProjectsSection from "./ProjectsSection";
 import Contact from "./Contact";
 import ParticleBg from "./ParticlesBg";
+import Particles from "react-particles-js";
+import ParticlesConfig from "../../config/particle-config";
 
 
 const PortfolioContainer = () => {
@@ -31,7 +33,7 @@ const PortfolioContainer = () => {
 
     return (
         <div className="portfolio-container">
-            <ParticleBg />
+            <Particles className="particles-background" params={ParticlesConfig} />
             <Header />
             <HeroSection />
             <AboutMe />

@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.portfolio-hero {
+    padding: 4.9rem 2rem 0 2rem;
+    color: rgba(255, 255, 255, 0.705);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+    &__main-wrapper {
+        height: 65%;
+    }
+
+    &__text-divider-wrapper {
+        height: 50%;
+        width: 50%;
+    }
+
+    &__img-wrapper {
+
+    }
+}

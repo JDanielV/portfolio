@@ -3,12 +3,22 @@
 @import "./breakpoints";
 
 .portfolio-container {
-    background: linear-gradient(#253855, #060b10);
+    background: linear-gradient(#1f375a, #060b10);
+    box-sizing: border-box;
+    height: fit-content;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.tsparticles-canvas-el {
-    filter: blur(2px);
+.particles-background {
+    filter: blur(1px);
     position: absolute;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 0;
 }

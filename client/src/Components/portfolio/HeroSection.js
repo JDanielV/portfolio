@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../../styles/main.css";
+import CodingIcon from "../../assets/portfolio-assets/hero-icon.svg";
 
 const HeroSection = () => {
     return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
                 <div className="portfolio-hero__text-divider-wrapper">
                     <div className="portfolio-hero__divider" />
                     <p className="portfolio-hero__text">
-                        Welcome to my portfolio. I love coding beautiful, functional things that get the job done as simple and as effective as possible.
+                        Hello, I love coding beautiful things that get the job done as simple and as effective as possible.
                     </p>
                 </div>
                 <div className="portfolio-hero__hero-text-img-wrapper">
@@ -17,11 +18,10 @@ const HeroSection = () => {
                         <h1 className="portfolio-hero__hero-text">Villaverde</h1>
                     </div>
                     <div className="portfolio-hero__img-wrapper">
-                        <img className="porfolio-hero__img" src="" alt="" />
+                        <img className="portfolio-hero__img" src={CodingIcon} alt="coding big" />
                     </div>
                 </div>
             </div>
-
         </section>
     )
 };

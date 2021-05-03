@@ -25,7 +25,7 @@ const Header = () => {
                 <img className="portfolio-header__nav-logo-img" src="" alt="portfolio logo" />
             </a>
             <div className="portfolio-header__nav-button-mobile">
-                <img className="portfolio-header__nav-button-icon-mobile" src="" alt="" />
+                <span className="portfolio-header__nav-button-span-mobile">menu</span>
             </div>
             <nav className="portfolio-header__nav">
                 <ul className="portfolio-header__nav-buttons-wrapper">
