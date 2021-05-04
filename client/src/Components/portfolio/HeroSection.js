@@ -7,19 +7,23 @@ const HeroSection = () => {
         <section className="portfolio-hero">
             <div className="portfolio-hero__main-wrapper">
                 <div className="portfolio-hero__text-divider-wrapper">
+                    <div className="portfolio-hero__hero-title-wrapper">
+                        <h1 className="portfolio-hero__hero-title">Daniel</h1>
+                        <h1 className="portfolio-hero__hero-title2">Villaverde</h1>
+                    </div>
                     <div className="portfolio-hero__divider" />
-                    <p className="portfolio-hero__text">
-                        Hello, I love coding beautiful things that get the job done as simple and as effective as possible.
-                    </p>
+                    <div className="portfolio-hero__divider2" />
+                    <div className="portfolio-hero__texts-wrapper">
+                        <span className="portfolio-hero__text">
+                            Full Stack
+                        </span>
+                        <span className="portfolio-hero__text2">
+                            Web Development
+                        </span>
+                    </div>
                 </div>
-                <div className="portfolio-hero__hero-text-img-wrapper">
-                    <div className="portfolio-hero__hero-text-wrapper">
-                        <h1 className="portfolio-hero__hero-text">Daniel</h1>
-                        <h1 className="portfolio-hero__hero-text">Villaverde</h1>
-                    </div>
-                    <div className="portfolio-hero__img-wrapper">
-                        <img className="portfolio-hero__img" src={CodingIcon} alt="coding big" />
-                    </div>
+                <div className="portfolio-hero__img-wrapper">
+                    <img className="portfolio-hero__img" src={CodingIcon} alt="coding big" />
                 </div>
             </div>
         </section>
