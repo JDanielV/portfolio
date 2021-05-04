@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.portfolio-projects {
+    padding: 4.9rem 2rem 0 2rem;
+    color: rgba(255, 255, 255, 0.705);
+    height: 100vh;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__project-container {
+        height: 80%;
+        border: 2px solid rgba(255, 255, 255, 0.472);
+        border-radius: 4px;
+        background: rgba(5, 0, 0, 0.438);
+    }
+}

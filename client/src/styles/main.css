@@ -2322,7 +2322,7 @@
   overflow: hidden;
   left: 0;
   top: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 .particles-background {
@@ -2338,8 +2338,8 @@
   transition: -webkit-transform 2 ease-in-out;
   transition: transform 2 ease-in-out;
   transition: transform 2 ease-in-out, -webkit-transform 2 ease-in-out;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 @font-face {
@@ -2375,6 +2375,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2rem;
+  z-index: 2;
 }
 
 .portfolio-header__nav {
@@ -2475,6 +2476,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .portfolio-hero__text2 {
@@ -2484,12 +2487,16 @@
 .portfolio-hero__hero-title {
   font-size: 2.5rem;
   z-index: 1;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .portfolio-hero__hero-title2 {
   font-size: 2.5rem;
   margin-left: 1rem;
   z-index: 1;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .portfolio-hero__img-wrapper {
@@ -2508,6 +2515,100 @@
   min-width: 180%;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.portfolio-about-me {
+  padding: 4.9rem 2rem 0 2rem;
+  color: rgba(255, 255, 255, 0.705);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5rem;
+}
+
+.portfolio-about-me__img-wrapper {
+  height: 17rem;
+  width: 17rem;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 170px;
+  margin-bottom: 2rem;
+}
+
+.portfolio-about-me__img {
+  -webkit-transform: translate(-4rem, -3rem);
+          transform: translate(-4rem, -3rem);
+}
+
+.portfolio-about-me__title {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.portfolio-about-me__subtitle {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.portfolio-about-me__subtitle--highlight {
+  font-weight: 600;
+}
+
+.portfolio-about-me__text {
+  line-height: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.portfolio-projects {
+  padding: 4.9rem 2rem 0 2rem;
+  color: rgba(255, 255, 255, 0.705);
+  height: 100vh;
+}
+
+.portfolio-projects__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-projects__project-container {
+  height: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.472);
+  border-radius: 4px;
+  background: rgba(5, 0, 0, 0.438);
 }
 
 * {

@@ -10,7 +10,7 @@
     overflow: hidden;
     left: 0;
     top: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 
 .particles-background {
@@ -22,5 +22,5 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: transform 2 ease-in-out;
-    transform: translateY(0%);
+    transform: translateY(-1rem);
 }
