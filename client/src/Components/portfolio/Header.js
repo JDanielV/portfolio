@@ -31,7 +31,7 @@ const Header = () => {
                 <ul className="portfolio-header__nav-buttons-wrapper">
                     {navButtons.map((button) => {
                         return (
-                            <li className="portfolio-header__nav-button">
+                            <li className="portfolio-header__nav-button" key={button.buttonText}>
                                 <span className="portfolio-header__nav-button-text">
                                     {button.buttonText}
                                 </span>

@@ -13,7 +13,8 @@
     }
 
     &__project-container {
-        height: 80%;
+        height: 90%;
+        width: 100%;
         // border: 2px solid rgba(255, 255, 255, 0.472);
         border-radius: 6px;
         background: rgba(5, 0, 0, 0.438);
@@ -24,4 +25,26 @@
         border-bottom: 2px solid rgba(255, 255, 255, 0.472);
         height: 70%;
     }
+}
+
+.swiper-pagination {
+    
+    &-bullet {
+        background: white !important;
+    }
+}
+
+.swiper-wrapper {
+    padding: 0;
+}
+
+.swiper-slide {
+    padding: 0;
+    width: 100%;
+}
+
+#portfolio-projects__swiper-container {
+    padding: 0;
+    width: 100%;
+    height: 90%;
 }
