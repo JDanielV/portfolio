@@ -2931,28 +2931,63 @@
           transform: translate(-4rem, -3rem);
 }
 
-.portfolio-about-me__title {
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: .5rem;
-  font-size: 1.2rem;
-}
-
 .portfolio-about-me__subtitle {
   display: block;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 2rem;
+  font-family: "BaiJamjuree-Regular";
 }
 
 .portfolio-about-me__subtitle--highlight {
-  font-weight: 600;
+  font-family: "BaiJamjuree-Bold";
+  background: -webkit-gradient(linear, left top, right top, from(#F9D28B), to(#E9EDEB));
+  background: linear-gradient(to right, #F9D28B, #E9EDEB);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .portfolio-about-me__text {
-  line-height: 1.5rem;
-  text-align: justify;
+  line-height: 1.7rem;
+  text-align: start;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.portfolio-about-me__text--highlight1 {
+  display: inline-block;
+  background: #000029;
+}
+
+.portfolio-about-me__text--highlight1-wrapper {
+  padding-bottom: 1px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#5869DA), to(#E9EDEB));
+  background: linear-gradient(to right, #5869DA, #E9EDEB);
+}
+
+.portfolio-about-me__text--highlight2 {
+  display: inline-block;
+  background: #000029;
+}
+
+.portfolio-about-me__text--highlight2-wrapper {
+  padding-bottom: 1px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#FF3347), to(#E9EDEB));
+  background: linear-gradient(to right, #FF3347, #E9EDEB);
+}
+
+.portfolio-about-me__text--highlight3 {
+  display: inline-block;
+  background: #000029;
+}
+
+.portfolio-about-me__text--highlight3-wrapper {
+  padding-bottom: 1px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#3D721D), to(#E9EDEB));
+  background: linear-gradient(to right, #3D721D, #E9EDEB);
 }
 
 @font-face {
