@@ -3144,8 +3144,9 @@
 .portfolio-contact__divider {
   width: 5rem;
   height: .1rem;
-  background: yellow;
-  margin: .5rem 0 1.5rem 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #F9D28B), to(#E9EDEB));
+  background: linear-gradient(to right, #F9D28B 60%, #E9EDEB);
+  margin: 1rem 0 1.5rem 0;
 }
 
 .portfolio-contact__contact-icon-wrapper {
