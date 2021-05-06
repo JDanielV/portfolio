@@ -3,15 +3,24 @@
 @import "./breakpoints";
 
 .portfolio-container {
-    background: linear-gradient(#1f375a, #060b10);
+    background: linear-gradient($oxford-blue, #060b10);
+    color: $platinum-white;
     box-sizing: border-box;
     width: 100vw;
     max-width: 100vw;
     overflow: hidden;
     left: 0;
     top: 0;
-    font-family: "Barlow", sans-serif;
+    font-family: "OpenSans-Regular", sans-serif;
 }
+
+.particles-background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    // background: red;
+}
+
 
 .particles-background {
     filter: blur(1px);
@@ -22,5 +31,5 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: transform 2 ease-in-out;
-    transform: translateY(-1rem);
+    // transform: translateY(-1rem);
 }

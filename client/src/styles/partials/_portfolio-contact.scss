@@ -1,0 +1,109 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.portfolio-contact {
+    padding: 4.9rem 2rem 4.9rem 2rem;
+    color: rgba(255, 255, 255, 0.705);
+    position: relative;
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__contact-text {
+
+        margin-bottom: 2rem;
+
+        display: block;
+        &--bold {
+            display: block;
+            margin-bottom: .5rem;
+            font-weight: 600;
+        }
+
+        &--highlight {
+            display: block;
+        }
+    }
+
+    &__divider {
+        width: 5rem;
+        height: .1rem;
+        background: yellow;
+        margin: .5rem 0 1.5rem 0;
+    }
+    
+    &__contact-icon-wrapper {
+        display: none;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-inputs-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    &__form-input {
+        width: 100%;
+        height: 3rem;
+        padding: .5rem .7rem;
+        margin-bottom: .5rem;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        outline: none;
+        font-size: 1rem;
+        border-radius: 1px;
+        color: #EFF2F1;
+
+        &:focus {
+            background: rgba(255, 255, 255, 0.931);
+            color: #000029;
+        }
+    }
+
+    &__form-message-span {
+        display: block;
+        margin-bottom: .6rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    &__form-textarea {
+        resize: none;
+        height: 8rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: .5rem .7rem;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        outline: none;
+        font-size: 1rem;
+        border-radius: 1px;
+        font-family: "Barlow", sans-serif;
+        color: #EFF2F1;
+
+        &:focus {
+            background: rgba(255, 255, 255, 0.931);
+            color: #000029;
+        }
+    }
+
+    &__form-button-wrapper {
+        width: 8rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        background: transparent;
+        color: rgba(255, 255, 255, 0.705);
+        border-radius: 1px;
+        font-size: 1rem;
+    }
+}

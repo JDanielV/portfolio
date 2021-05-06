@@ -5,8 +5,6 @@ import AboutMe from "./AboutMe";
 import ProjectsSection from "./ProjectsSection";
 import Contact from "./Contact";
 import ParticleBg from "./ParticlesBg";
-import Particles from "react-particles-js";
-import ParticlesConfig from "../../config/particle-config";
 
 
 const PortfolioContainer = () => {
@@ -14,6 +12,8 @@ const PortfolioContainer = () => {
     const [portfolioScrollThreshold, setPortfolioScrollThreshold] = useState({
         portfolioScrollThreshold: false
     });
+
+    const [offsetY, setOffsetY] = useState(0);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -29,11 +29,14 @@ const PortfolioContainer = () => {
         if (window.pageYOffset === 0) {
             setPortfolioScrollThreshold({ portfolioScrollThreshold: false });
         }
+
+        setOffsetY(window.pageYOffset);
     };
 
     return (
         <div className="portfolio-container">
-            <Particles className="particles-background" params={ParticlesConfig} />
+            {/* <Particles className="particles-background" params={ParticlesConfig} style={{ transform: `translateY(${offsetY * 0.5}px)` }} /> */}
+            <ParticleBg offsetY={offsetY} />
             <Header />
             <HeroSection />
             <AboutMe />

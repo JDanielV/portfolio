@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../styles/main.css";
-// import LogoHeader from "../../assets/portfolio-assets/images/portfolio-logo-header.png";
+import CodingIcon from "../../assets/portfolio-assets/hero-icon.svg";
 
 const Header = () => {
 
@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header className="portfolio-header">
             <a className="portfolio-header__nav-link-logo" href="">
-                <img className="portfolio-header__nav-logo-img" src="" alt="portfolio logo" />
+                <img className="portfolio-header__nav-logo-img" src={CodingIcon} alt="portfolio logo" />
             </a>
             <div className="portfolio-header__nav-button-mobile">
                 <span className="portfolio-header__nav-button-span-mobile">menu</span>
