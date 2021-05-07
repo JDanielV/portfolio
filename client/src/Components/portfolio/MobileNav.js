@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import "../../styles/main.css";
 import LinkedInIcon from "../../assets/portfolio-assets/linkedin.svg";
 import GitHubIcon from "../../assets/portfolio-assets/github.svg";
@@ -35,16 +35,18 @@ const MobileNav = ({ showMobileNav }) => {
         }
     }
 
+    const mobileNavRef = useRef(null)
+
     useEffect(() => {
         openAnimation();
 
         if (!showMobileNav) {
-            document.ontouchmove = (e) => true;
-            enableBodyScroll();
+            // document.ontouchmove = (e) => true;
+            enableBodyScroll(mobileNavRef);
         }
         else {
-            document.ontouchmove = (e) => e.preventDefault();
-            disableBodyScroll();
+            // document.ontouchmove = (e) => e.preventDefault();
+            disableBodyScroll(mobileNavRef);
         }
 
         return () => {
@@ -53,7 +55,7 @@ const MobileNav = ({ showMobileNav }) => {
     }, [showMobileNav])
 
     return (
-        <nav className={showMobileNav ? "portfolio-header__mobile-nav portfolio-header__mobile-nav--show" : "portfolio-header__mobile-nav"}>
+        <nav ref={mobileNavRef} className={showMobileNav ? "portfolio-header__mobile-nav portfolio-header__mobile-nav--show" : "portfolio-header__mobile-nav"}>
             <div className="portfolio-header__mobile-nav-main-wrapper">
                 <ul className="portfolio-header__mobile-nav-links">
                     {navButtons.map((button) => {
