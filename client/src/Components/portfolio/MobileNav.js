@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
 import LinkedInIcon from "../../assets/portfolio-assets/linkedin.svg";
 import GitHubIcon from "../../assets/portfolio-assets/github.svg";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 
 const MobileNav = ({ showMobileNav }) => {
@@ -36,6 +37,16 @@ const MobileNav = ({ showMobileNav }) => {
 
     useEffect(() => {
         openAnimation();
+
+        if (!showMobileNav) {
+            document.ontouchmove = (e) => true;
+            enableBodyScroll();
+        }
+        else {
+            document.ontouchmove = (e) => e.preventDefault();
+            disableBodyScroll();
+        }
+
         return () => {
 
         }
