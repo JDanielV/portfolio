@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
+import LinkedInIcon from "../../assets/portfolio-assets/linkedin.svg";
+import GitHubIcon from "../../assets/portfolio-assets/github.svg";
 
-const MobileNav = () => {
+
+const MobileNav = ({ showMobileNav }) => {
 
     const navButtons = [
         {
@@ -18,14 +21,34 @@ const MobileNav = () => {
         },
     ];
 
+    const [linksClasses, setLinksClasses] = useState("portfolio-header__mobile-nav-link-text");
+
+    const openAnimation = () => {
+        if (showMobileNav) {
+            setTimeout(() => {
+                setLinksClasses("portfolio-header__mobile-nav-link-text portfolio-header__mobile-nav-link-text--show");
+            }, 400);
+        }
+        else {
+            setLinksClasses("portfolio-header__mobile-nav-link-text");
+        }
+    }
+
+    useEffect(() => {
+        openAnimation();
+        return () => {
+
+        }
+    }, [showMobileNav])
+
     return (
-        <nav className="portfolio-header__mobile-nav">
+        <nav className={showMobileNav ? "portfolio-header__mobile-nav portfolio-header__mobile-nav--show" : "portfolio-header__mobile-nav"}>
             <div className="portfolio-header__mobile-nav-main-wrapper">
                 <ul className="portfolio-header__mobile-nav-links">
                     {navButtons.map((button) => {
                         return (
                             <li className="portfolio-header__mobile-nav-link">
-                                <span className="portfolio-header__mobile-nav-link-text">
+                                <span className={linksClasses}>
                                     {button.buttonText}
                                 </span>
                             </li>
@@ -39,10 +62,10 @@ const MobileNav = () => {
                     </div>
                     <div className="portfolio-header__mobile-nav-bottom-icons-wrapper">
                         <a className="portfolio-header__mobile-nav-bottom-icon-link" href="" target="_blank">
-                            <img className="portfolio-header__mobile-nav-bottom-icon" src="" alt="linked in" />
+                            <img className="portfolio-header__mobile-nav-bottom-icon" src={LinkedInIcon} alt="linked in" />
                         </a>
                         <a className="portfolio-header__mobile-nav-bottom-icon-link" href="" target="_blank">
-                            <img className="portfolio-header__mobile-nav-bottom-icon" src="" alt="github" />
+                            <img className="portfolio-header__mobile-nav-bottom-icon" src={GitHubIcon} alt="github" />
                         </a>
                     </div>
                 </div>
@@ -50,3 +73,5 @@ const MobileNav = () => {
         </nav>
     )
 }
+
+export default MobileNav;

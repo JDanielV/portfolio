@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    z-index: 2;
+    z-index: 3;
     background: linear-gradient($oxford-blue, rgba(0,0, 41, 0) 100%);
     
 
@@ -30,6 +30,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 3;
     }
 
     &__nav-button-span-mobile {
@@ -38,8 +39,94 @@
         letter-spacing: 2px;
     }
 
+    &__nav-link-logo {
+        z-index: 3;
+    }
+
     &__nav-logo-img {
         width: 3rem;
         height: auto;
+    }
+
+    &__mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.829);
+        backdrop-filter: blur(5px);
+        transition: all .4s ease-in-out;
+        transform: translateX(100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+
+        &--show {
+            transform: translateX(0);
+        }
+
+        &-main-wrapper {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        &-links {
+            padding: 0;
+            list-style-type: none;
+            font-family: "";
+            color: $platinum-white;
+        }
+
+        &-link {
+            font-family: "BaiJamjuree-Regular";
+            text-transform: capitalize;
+            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            overflow: hidden;
+
+            &-text {
+                display: inline-block;
+                transition: transform .2s ease-out;
+                transform: translateY(100%);
+
+                &--show {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        &-bottom-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &-bottom-info-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 3rem;
+            font-family: "BaiJamjuree-Regular";
+        }
+
+        &-bottom-icons-wrapper {
+            width: 1.7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            filter: invert(70%);
+        }
+
+        &-bottom-icon-link {
+            margin-top: 1rem;
+        }
     }
 }
