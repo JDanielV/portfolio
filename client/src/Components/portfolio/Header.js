@@ -3,7 +3,7 @@ import "../../styles/main.css";
 import CodingIcon from "../../assets/portfolio-assets/hero-icon.svg";
 import MobileNav from "./MobileNav";
 
-const Header = () => {
+const Header = ({ breakpoint }) => {
 
     const [showMobileNav, setShowMobileNav] = useState(false);
     const [inTransition, setInTransition] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
             <div className="portfolio-header__nav-button-mobile" onClick={toggleMobileNav}>
                 <span className="portfolio-header__nav-button-span-mobile">menu</span>
             </div>
-            <MobileNav showMobileNav={showMobileNav} />
+            {(breakpoint === "mobile" || breakpoint === "tablet") && <MobileNav showMobileNav={showMobileNav} />}
             <nav className="portfolio-header__nav">
                 <ul className="portfolio-header__nav-buttons-wrapper">
                     {navButtons.map((button) => {

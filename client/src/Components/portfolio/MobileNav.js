@@ -41,11 +41,9 @@ const MobileNav = ({ showMobileNav }) => {
         openAnimation();
 
         if (!showMobileNav) {
-            // document.ontouchmove = (e) => true;
             enableBodyScroll(mobileNavRef);
         }
         else {
-            // document.ontouchmove = (e) => e.preventDefault();
             disableBodyScroll(mobileNavRef);
         }
 
@@ -60,7 +58,7 @@ const MobileNav = ({ showMobileNav }) => {
                 <ul className="portfolio-header__mobile-nav-links">
                     {navButtons.map((button) => {
                         return (
-                            <li className="portfolio-header__mobile-nav-link">
+                            <li className="portfolio-header__mobile-nav-link" key={button.buttonText}>
                                 <span className={linksClasses}>
                                     {button.buttonText}
                                 </span>

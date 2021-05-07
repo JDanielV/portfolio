@@ -69,7 +69,7 @@ const PortfolioContainer = () => {
     return (
         <div className="portfolio-container">
             <ParticleBg offsetY={offsetY} />
-            <Header />
+            <Header breakpoint={breakpoint} />
             <HeroSection />
             <AboutMe />
             <ProjectsSection breakpoint={breakpoint} />
