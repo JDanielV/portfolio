@@ -15,6 +15,39 @@ const PortfolioContainer = () => {
 
     const [offsetY, setOffsetY] = useState(0);
 
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [breakpoint, setBreakpoint] = useState('');
+
+    const getWindowSize = () => {
+        setWindowSize(window.innerWidth);
+    }
+
+    useEffect(() => {
+
+        window.addEventListener("resize", getWindowSize);
+
+        if (window.innerWidth < 768)
+            setBreakpoint('mobile');
+        else if (window.innerWidth < 1440)
+            setBreakpoint('tablet');
+        else
+            setBreakpoint('desktop');
+
+        return () => {
+            window.removeEventListener("resize", getWindowSize);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (windowSize < 768)
+            setBreakpoint('mobile');
+        else if (windowSize < 1440)
+            setBreakpoint('tablet');
+        else
+            setBreakpoint('desktop');
+    }, [windowSize]);
+
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -35,12 +68,11 @@ const PortfolioContainer = () => {
 
     return (
         <div className="portfolio-container">
-            {/* <Particles className="particles-background" params={ParticlesConfig} style={{ transform: `translateY(${offsetY * 0.5}px)` }} /> */}
             <ParticleBg offsetY={offsetY} />
             <Header />
             <HeroSection />
             <AboutMe />
-            <ProjectsSection />
+            <ProjectsSection breakpoint={breakpoint} />
             <Contact />
         </div>
     );

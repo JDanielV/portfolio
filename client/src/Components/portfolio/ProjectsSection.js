@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Pagination]);
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ breakpoint }) => {
 
     const projectSlides = [
         {
@@ -26,10 +26,11 @@ const ProjectsSection = () => {
         },
     ]
 
-    return (
-        <section className="portfolio-projects">
-            <h2 className="portfolio-projects__title">Projects</h2>
-            <Swiper id="portfolio-projects__swiper-container" wrapperTag="ul" pagination spaceBetween={50}>
+    let projectsComponent;
+
+    switch (breakpoint) {
+        case 'mobile':
+            projectsComponent = (<Swiper id="portfolio-projects__swiper-container" wrapperTag="ul" pagination spaceBetween={50}>
                 {projectSlides.map((project) => {
                     return (
                         <SwiperSlide tag="li" key={project.projectName}>
@@ -54,25 +55,79 @@ const ProjectsSection = () => {
                         </SwiperSlide>
                     )
                 })}
-            </Swiper>
-            {/* <div className="portfolio-projects__project-container">
-                <div className="portfolio-projects__project-img-side">
-                    <div className="portfolio-projects__project-img-wrapper">
-                        <img className="portfolio-projects__project-img" src="" alt="" />
+            </Swiper>)
+            break;
+        case 'tablet':
+            projectsComponent = (
+                <div className="portfolio-projects__project-container">
+                    <div className="portfolio-projects__project-img-side">
+                        <div className="portfolio-projects__project-img-wrapper">
+                            <img className="portfolio-projects__project-img" src="" alt="" />
+                        </div>
                     </div>
-                </div>
-                <div className="portfolio-projects__project-info-side">
-                    <h3 className="portfolio-projects__project-title"></h3>
-                    <p className="portfolio-projects__project-subtitle"></p>
-                    <div className="portfolio-projects__project-details-button-wrapper">
-                        <span className="portfolio-projects__project-details-button">more info</span>
-                        <div className="portfolio-projects__project-details-wrapper">
-                            <p className="portfolio-projects__project-details">
-                            </p>
+                    <div className="portfolio-projects__project-info-side">
+                        <h3 className="portfolio-projects__project-title"></h3>
+                        <p className="portfolio-projects__project-subtitle"></p>
+                        <div className="portfolio-projects__project-details-button-wrapper">
+                            <span className="portfolio-projects__project-details-button">more info</span>
+                            <div className="portfolio-projects__project-details-wrapper">
+                                <p className="portfolio-projects__project-details">
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            );
+            break;
+        case 'desktop':
+            projectsComponent = (
+                <div className="portfolio-projects__project-container">
+                    <div className="portfolio-projects__project-img-side">
+                        <div className="portfolio-projects__project-img-wrapper">
+                            <img className="portfolio-projects__project-img" src="" alt="" />
+                        </div>
+                    </div>
+                    <div className="portfolio-projects__project-info-side">
+                        <h3 className="portfolio-projects__project-title"></h3>
+                        <p className="portfolio-projects__project-subtitle"></p>
+                        <div className="portfolio-projects__project-details-button-wrapper">
+                            <span className="portfolio-projects__project-details-button">more info</span>
+                            <div className="portfolio-projects__project-details-wrapper">
+                                <p className="portfolio-projects__project-details">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+            break;
+        default:
+            projectsComponent = (
+                <div className="portfolio-projects__project-container">
+                    <div className="portfolio-projects__project-img-side">
+                        <div className="portfolio-projects__project-img-wrapper">
+                            <img className="portfolio-projects__project-img" src="" alt="" />
+                        </div>
+                    </div>
+                    <div className="portfolio-projects__project-info-side">
+                        <h3 className="portfolio-projects__project-title"></h3>
+                        <p className="portfolio-projects__project-subtitle"></p>
+                        <div className="portfolio-projects__project-details-button-wrapper">
+                            <span className="portfolio-projects__project-details-button">more info</span>
+                            <div className="portfolio-projects__project-details-wrapper">
+                                <p className="portfolio-projects__project-details">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+    }
+
+    return (
+        <section className="portfolio-projects">
+            <h2 className="portfolio-projects__title">Projects</h2>
+            {projectsComponent}
         </section>
     )
 };
