@@ -38,6 +38,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-header {
   width: 100%;
   max-width: 100%;
@@ -221,6 +236,21 @@
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 .torum-landing {
@@ -515,6 +545,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-features {
   background: black;
   width: 100vw;
@@ -799,6 +844,21 @@
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 .torum-mobile-app {
@@ -1437,6 +1497,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-roadmap {
   height: 48rem;
   -webkit-box-sizing: border-box;
@@ -1700,6 +1775,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .comparison {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 32, 87, 0.99)), to(rgba(111, 0, 119, 0.99)));
   background: linear-gradient(0deg, rgba(0, 32, 87, 0.99), rgba(111, 0, 119, 0.99));
@@ -1937,6 +2027,21 @@
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 .torum-ambassadors {
@@ -2187,6 +2292,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-featured {
   background: black;
   color: white;
@@ -2341,6 +2461,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-sign-up {
   background: black;
   font-family: "Poppins-Regular";
@@ -2473,6 +2608,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .torum-footer {
   background: black;
   color: white;
@@ -2587,6 +2737,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .portfolio-container {
   background: -webkit-gradient(linear, left top, left bottom, from(#000029), to(#060b10));
   background: linear-gradient(#000029, #060b10);
@@ -2660,6 +2825,21 @@
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 .portfolio-header {
@@ -2886,6 +3066,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .portfolio-hero {
   padding: 4.9rem 2rem 0 2rem;
   height: 100vh;
@@ -3046,6 +3241,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .portfolio-about-me {
   padding: 4.9rem 2rem 0 2rem;
   color: rgba(255, 255, 255, 0.705);
@@ -3170,6 +3380,21 @@
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .portfolio-projects {
   padding: 4.9rem 2rem 0 2rem;
   color: rgba(255, 255, 255, 0.705);
@@ -3281,6 +3506,21 @@
 @font-face {
   font-family: "OpenSans-SemiBold";
   src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
 }
 
 .portfolio-contact {
