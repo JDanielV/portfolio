@@ -28,7 +28,7 @@ const ProjectsSection = ({ breakpoint }) => {
             projectLink: "/torum"
         },
         {
-            projectName: "Light Mind",
+            projectName: "Light Mind (Video)",
             projectSubtitle: "Front-end, UX/UI design, back-end",
             projectDescription: "Entry-logger project built for BrainStation's Web Development Bootcamp program. Still under development.",
             projectImage: LightMindImage,
