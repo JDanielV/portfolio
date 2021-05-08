@@ -2895,6 +2895,12 @@
   letter-spacing: 2px;
 }
 
+@media (min-width: 768px) {
+  .portfolio-header__nav-button-span-mobile {
+    font-size: 1.3rem;
+  }
+}
+
 .portfolio-header__nav-link-logo {
   z-index: 3;
 }

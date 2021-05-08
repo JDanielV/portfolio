@@ -38,6 +38,10 @@
         font-family: "BaiJamjuree-Regular";
         font-size: 1.1rem;
         letter-spacing: 2px;
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
     }
 
     &__nav-link-logo {
