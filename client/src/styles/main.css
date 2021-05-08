@@ -3399,6 +3399,14 @@
   margin-bottom: 5rem;
 }
 
+@media (min-width: 768px) {
+  .portfolio-about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .portfolio-about-me__img-wrapper {
   height: 17rem;
   width: 17rem;
@@ -3413,6 +3421,12 @@
 .portfolio-about-me__img {
   -webkit-transform: translate(-4rem, -3rem);
           transform: translate(-4rem, -3rem);
+}
+
+@media (min-width: 768px) {
+  .portfolio-about-me__subtitle-text-wrapper {
+    width: 50%;
+  }
 }
 
 .portfolio-about-me__subtitle {
