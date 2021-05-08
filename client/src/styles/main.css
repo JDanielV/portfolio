@@ -3104,6 +3104,7 @@
           align-items: center;
   z-index: 1;
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-hero__main-wrapper {
@@ -3116,6 +3117,12 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-hero__main-wrapper {
+    padding-bottom: 1.5rem;
+  }
 }
 
 .portfolio-hero__text-divider-wrapper {
@@ -3336,6 +3343,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .portfolio-hero__img {
+    -webkit-transform: translate(10rem, -10rem);
+            transform: translate(10rem, -10rem);
+    min-width: 100%;
+  }
+}
+
 @font-face {
   font-family: "BaiJamjuree-Regular";
   src: url("./../assets/portfolio-assets/fonts/BaiJamjuree-Regular.ttf");
@@ -3436,6 +3451,12 @@
   line-height: 2rem;
   font-family: "BaiJamjuree-Regular";
   color: #E9EDEB;
+}
+
+@media (min-width: 768px) {
+  .portfolio-about-me__subtitle {
+    font-size: 1.7rem;
+  }
 }
 
 .portfolio-about-me__subtitle--highlight {
