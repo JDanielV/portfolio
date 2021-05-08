@@ -3184,17 +3184,44 @@
 }
 
 .portfolio-projects__project-container {
-  height: 90%;
+  height: 93%;
   width: 100%;
   border-radius: 6px;
   background: rgba(5, 0, 0, 0.438);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  overflow: hidden;
 }
 
 .portfolio-projects__project-img-side {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.472);
-  height: 70%;
+  height: 65%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-projects__project-img {
+  width: 100%;
+}
+
+.portfolio-projects__project-info-side {
+  padding: 1rem;
+}
+
+.portfolio-projects__project-title {
+  font-family: "BaiJamjuree-Bold";
+  font-size: 1.4rem;
+  margin-bottom: .3rem;
+}
+
+.portfolio-projects__project-subtitle {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-family: "OpenSans-Regular";
 }
 
 .swiper-pagination-bullet {

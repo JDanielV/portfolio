@@ -3,6 +3,9 @@ import "../../styles/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
+import TerranovaImage from "../../assets/portfolio-assets/terranova-mobile-cropped.jpg";
+import TorumImage from "../../assets/portfolio-assets/torum-mobile-cropped.jpg";
+import LightMindImage from "../../assets/portfolio-assets/lightmind-mobile.JPG";
 
 SwiperCore.use([Pagination]);
 
@@ -11,18 +14,21 @@ const ProjectsSection = ({ breakpoint }) => {
     const projectSlides = [
         {
             projectName: "Terranova Sales",
-            projectDescription: "Terranova Sales is a Manufacturer's Representative business based in Downtown Vancouver (Canada). I developed & published their website.",
-            projectImage: ""
+            projectSubtitle: "Front-end, Maps API, back-end",
+            projectDescription: "Business based in Downtown Vancouver (Canada). Developed & published their website.",
+            projectImage: TerranovaImage
         },
         {
             projectName: "Light Mind",
-            projectDescription: "Project built for BrainStation's Web Development Bootcamp program in 2020.",
-            projectImage: ""
+            projectSubtitle: "Front-end, UX/UI design, back-end",
+            projectDescription: "Entry-logger project built for BrainStation's Web Development Bootcamp program. Still under development.",
+            projectImage: LightMindImage
         },
         {
             projectName: "Torum Website (Practice)",
-            projectDescription: "Built this as pratice based on their existing website. I have no affiliation to this project nor I am endorsing their platform.",
-            projectImage: ""
+            projectSubtitle: "Front-end",
+            projectDescription: "Developed for practice. I have no affiliation to Torum, nor I am endorsing their platform.",
+            projectImage: TorumImage
         },
     ]
 
@@ -37,12 +43,12 @@ const ProjectsSection = ({ breakpoint }) => {
                             <div className="portfolio-projects__project-container">
                                 <div className="portfolio-projects__project-img-side">
                                     <div className="portfolio-projects__project-img-wrapper">
-                                        <img className="portfolio-projects__project-img" src="" alt="" />
+                                        <img className="portfolio-projects__project-img" src={project.projectImage} alt="" />
                                     </div>
                                 </div>
                                 <div className="portfolio-projects__project-info-side">
                                     <h3 className="portfolio-projects__project-title">{project.projectName}</h3>
-                                    <p className="portfolio-projects__project-subtitle"></p>
+                                    <span className="portfolio-projects__project-subtitle">{project.projectSubtitle}</span>
                                     <div className="portfolio-projects__project-details-button-wrapper">
                                         <div className="portfolio-projects__project-details-wrapper">
                                             <p className="portfolio-projects__project-details">

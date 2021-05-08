@@ -15,17 +15,40 @@
     }
 
     &__project-container {
-        height: 90%;
+        height: 93%;
         width: 100%;
-        // border: 2px solid rgba(255, 255, 255, 0.472);
         border-radius: 6px;
         background: rgba(5, 0, 0, 0.438);
         backdrop-filter: blur(2px);
+        overflow: hidden;
+        
     }
 
     &__project-img-side {
-        border-bottom: 2px solid rgba(255, 255, 255, 0.472);
-        height: 70%;
+        height: 65%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__project-img {
+        width: 100%
+    }
+
+    &__project-info-side {
+        padding: 1rem;
+    }
+
+    &__project-title {
+        font-family: "BaiJamjuree-Bold";
+        font-size: 1.4rem;
+        margin-bottom: .3rem;
+    }
+
+    &__project-subtitle {
+        display: inline-block;
+        margin-bottom: .5rem;
+        font-family: "OpenSans-Regular";
     }
 }
 
