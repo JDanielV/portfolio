@@ -4,7 +4,7 @@ import CodingIcon from "../../assets/portfolio-assets/hero-icon.svg";
 
 const HeroSection = () => {
     return (
-        <section className="portfolio-hero">
+        <section className="portfolio-hero" id="hero-section">
             <div className="portfolio-hero__main-wrapper">
                 <div className="portfolio-hero__text-divider-wrapper">
                     <div className="portfolio-hero__hero-title-wrapper">

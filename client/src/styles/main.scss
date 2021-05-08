@@ -14,10 +14,15 @@
 @import "partials/portfolio-about-me";
 @import "partials/portfolio-projects";
 @import "partials/portfolio-contact";
+@import "partials/back-to-portfolio";
 
 
 * {
   box-sizing: border-box;
   max-width: 100vw;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

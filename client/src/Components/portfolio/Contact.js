@@ -4,7 +4,7 @@ import SendArrow from "../../assets/portfolio-assets/send-arrow.svg";
 
 const Contact = () => {
     return (
-        <section className="portfolio-contact">
+        <section className="portfolio-contact" id="contact-section">
             <div className="portfolio-contact__main-wrapper">
                 <div className="portfolio-contact__left-side-wrapper">
                     <h2 className="portfolio-contact__title">Get In Touch</h2>

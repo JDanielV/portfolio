@@ -31,6 +31,7 @@
         align-items: center;
         justify-content: center;
         z-index: 3;
+        cursor: pointer;
     }
 
     &__nav-button-span-mobile {
@@ -90,11 +91,14 @@
             margin-bottom: 1.5rem;
             font-size: 3rem;
             overflow: hidden;
+            text-decoration: none;
+            color: $platinum-white;
 
             &-text {
                 display: inline-block;
                 transition: transform .2s ease-out;
                 transform: translateY(100%);
+                cursor: pointer;
 
                 &--show {
                     transform: translateY(0);

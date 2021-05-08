@@ -60,7 +60,7 @@ const MobileAppSection = () => {
                 <img className="torum-mobile-app__right-img" src={MobilePhoneImg} alt="mobile app" />
                 {coinIconsArray.map((coin) => {
                     return (
-                        <img className={coin.iconClass} src={coin.icon} alt={coin.iconAlt} />
+                        <img className={coin.iconClass} src={coin.icon} alt={coin.iconAlt} key={coin.iconAlt} />
                     )
                 })}
             </div>

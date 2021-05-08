@@ -20,6 +20,19 @@ const Header = ({ breakpoint }) => {
         }
     }
 
+    const mobileNavLogoPress = () => {
+
+        if (!inTransition && showMobileNav) {
+            setInTransition(true);
+
+            setShowMobileNav(!showMobileNav);
+
+            setTimeout(() => {
+                setInTransition(false);
+            }, 700)
+        }
+    }
+
     const navButtons = [
         {
             buttonText: "portfolio",
@@ -37,13 +50,13 @@ const Header = ({ breakpoint }) => {
 
     return (
         <header className="portfolio-header">
-            <a className="portfolio-header__nav-link-logo" href="">
+            <a className="portfolio-header__nav-link-logo" href="#hero-section" onClick={mobileNavLogoPress}>
                 <img className="portfolio-header__nav-logo-img" src={CodingIcon} alt="portfolio logo" />
             </a>
             <div className="portfolio-header__nav-button-mobile" onClick={toggleMobileNav}>
                 <span className="portfolio-header__nav-button-span-mobile">menu</span>
             </div>
-            {(breakpoint === "mobile" || breakpoint === "tablet") && <MobileNav showMobileNav={showMobileNav} />}
+            {(breakpoint === "mobile" || breakpoint === "tablet") && <MobileNav showMobileNav={showMobileNav} toggleMobileNav={toggleMobileNav} />}
             <nav className="portfolio-header__nav">
                 <ul className="portfolio-header__nav-buttons-wrapper">
                     {navButtons.map((button) => {

@@ -1,0 +1,48 @@
+@import "./variables";
+@import "./fonts";
+@import "./breakpoints";
+
+.torum-back {
+    position: fixed;
+    bottom: 5.5rem;
+    left: -1rem;
+    width: 9rem;
+    height: 3rem;
+    z-index: 4;
+    display: flex;
+    justify-content: flex-end;
+    background: $platinum-white;
+    border-radius: 20px;
+    padding-right: 1rem;
+    overflow: hidden;
+    animation: mount-button 2.5s;
+
+    &-mounted {
+        transform: translateX(-3.9rem);
+    }
+
+    @keyframes mount-button {
+        0% {
+            transform: translateX(0);
+        }
+
+        75% {
+            transform: translateX(-1.7rem);
+        }
+
+        100% {
+            transform: translateX(-3.9rem);
+        }
+    }
+
+    &__icon {
+        height: 60%;
+        width: auto;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}

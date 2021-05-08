@@ -5,20 +5,23 @@ import GitHubIcon from "../../assets/portfolio-assets/github.svg";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 
-const MobileNav = ({ showMobileNav }) => {
+const MobileNav = ({ showMobileNav, toggleMobileNav }) => {
 
     const navButtons = [
         {
             buttonText: "portfolio",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#projects-section"
         },
         {
             buttonText: "about",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#about-me-section"
         },
         {
             buttonText: "contact",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#contact-section"
         },
     ];
 
@@ -59,9 +62,11 @@ const MobileNav = ({ showMobileNav }) => {
                     {navButtons.map((button) => {
                         return (
                             <li className="portfolio-header__mobile-nav-link" key={button.buttonText}>
-                                <span className={linksClasses}>
-                                    {button.buttonText}
-                                </span>
+                                <a className="portfolio-header__mobile-nav-link" href={button.buttonLink} onClick={toggleMobileNav}>
+                                    <span className={linksClasses}>
+                                        {button.buttonText}
+                                    </span>
+                                </a>
                             </li>
                         )
                     })}
@@ -72,10 +77,10 @@ const MobileNav = ({ showMobileNav }) => {
                         <span className="portfolio-header__mobile-nav-bottom-info">Full-Stack Web Developer</span>
                     </div>
                     <div className="portfolio-header__mobile-nav-bottom-icons-wrapper">
-                        <a className="portfolio-header__mobile-nav-bottom-icon-link" href="" target="_blank">
+                        <a className="portfolio-header__mobile-nav-bottom-icon-link" href="https://www.linkedin.com/in/daniel-villaverde/" target="_blank" rel="noreferrer">
                             <img className="portfolio-header__mobile-nav-bottom-icon" src={LinkedInIcon} alt="linked in" />
                         </a>
-                        <a className="portfolio-header__mobile-nav-bottom-icon-link" href="" target="_blank">
+                        <a className="portfolio-header__mobile-nav-bottom-icon-link" href="https://github.com/JDanielV" target="_blank" rel="noreferrer">
                             <img className="portfolio-header__mobile-nav-bottom-icon" src={GitHubIcon} alt="github" />
                         </a>
                     </div>

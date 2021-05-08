@@ -9,6 +9,7 @@ import AmbassadorsSection from './Ambassadors';
 import FeaturedOnSection from './FeaturedOn';
 import SignUpSection from './SignUp';
 import FooterSection from './Footer';
+import BackToPortfolio from './BackToPortfolio';
 
 const TorumContainer = () => {
 
@@ -18,6 +19,9 @@ const TorumContainer = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+
+        window.scrollTo(0, 0);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
@@ -35,6 +39,7 @@ const TorumContainer = () => {
     return (
         <div className="torum-container">
             <Header scrollThreshold={scrollThreshold.scrollThreshold} />
+            <BackToPortfolio />
             <LandingSection />
             <Features />
             <MobileAppSection />

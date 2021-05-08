@@ -2886,6 +2886,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 3;
+  cursor: pointer;
 }
 
 .portfolio-header__nav-button-span-mobile {
@@ -2963,6 +2964,8 @@
   margin-bottom: 1.5rem;
   font-size: 3rem;
   overflow: hidden;
+  text-decoration: none;
+  color: #E9EDEB;
 }
 
 .portfolio-header__mobile-nav-link-text {
@@ -2973,6 +2976,7 @@
   transition: transform .2s ease-out, -webkit-transform .2s ease-out;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  cursor: pointer;
 }
 
 .portfolio-header__mobile-nav-link-text--show {
@@ -3675,10 +3679,140 @@
   right: .5rem;
 }
 
+@font-face {
+  font-family: "BaiJamjuree-Regular";
+  src: url("./../assets/portfolio-assets/fonts/BaiJamjuree-Regular.ttf");
+}
+
+@font-face {
+  font-family: "BaiJamjuree-Bold";
+  src: url("./../assets/portfolio-assets/fonts/BaiJamjuree-Bold.ttf");
+}
+
+@font-face {
+  font-family: "BaiJamjuree-Bold-Italic";
+  src: url("./../assets/portfolio-assets/fonts/BaiJamjuree-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "BaiJamjuree-SemiBold";
+  src: url("./../assets/portfolio-assets/fonts/BaiJamjuree-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./../assets/portfolio-assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular-Italic";
+  src: url("./../assets/portfolio-assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./../assets/portfolio-assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./../assets/portfolio-assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Semi-bold";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./../assets/torum-assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+.torum-back {
+  position: fixed;
+  bottom: 5.5rem;
+  left: -1rem;
+  width: 9rem;
+  height: 3rem;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #E9EDEB;
+  border-radius: 20px;
+  padding-right: 1rem;
+  overflow: hidden;
+  -webkit-animation: mount-button 2.5s;
+          animation: mount-button 2.5s;
+}
+
+.torum-back-mounted {
+  -webkit-transform: translateX(-3.9rem);
+          transform: translateX(-3.9rem);
+}
+
+@-webkit-keyframes mount-button {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-1.7rem);
+            transform: translateX(-1.7rem);
+  }
+  100% {
+    -webkit-transform: translateX(-3.9rem);
+            transform: translateX(-3.9rem);
+  }
+}
+
+@keyframes mount-button {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-1.7rem);
+            transform: translateX(-1.7rem);
+  }
+  100% {
+    -webkit-transform: translateX(-3.9rem);
+            transform: translateX(-3.9rem);
+  }
+}
+
+.torum-back__icon {
+  height: 60%;
+  width: auto;
+}
+
+.torum-back__icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100vw;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */

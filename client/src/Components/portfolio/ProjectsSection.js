@@ -21,18 +21,18 @@ const ProjectsSection = ({ breakpoint }) => {
             projectLink: "https://terranovasales.ca/"
         },
         {
+            projectName: "Torum Website (Practice)",
+            projectSubtitle: "Front-end",
+            projectDescription: "Developed for practice. I have no affiliation with Torum, nor I am endorsing their platform.",
+            projectImage: TorumImage,
+            projectLink: "/torum"
+        },
+        {
             projectName: "Light Mind",
             projectSubtitle: "Front-end, UX/UI design, back-end",
             projectDescription: "Entry-logger project built for BrainStation's Web Development Bootcamp program. Still under development.",
             projectImage: LightMindImage,
             projectLink: "https://www.loom.com/share/0346866e010d440a8dd79e73877ce734"
-        },
-        {
-            projectName: "Torum Website (Practice)",
-            projectSubtitle: "Front-end",
-            projectDescription: "Developed for practice. I have no affiliation to Torum, nor I am endorsing their platform.",
-            projectImage: TorumImage,
-            projectLink: "/torum"
         },
     ]
 
@@ -208,7 +208,7 @@ const ProjectsSection = ({ breakpoint }) => {
     }
 
     return (
-        <section className="portfolio-projects">
+        <section className="portfolio-projects" id="projects-section">
             <h2 className="portfolio-projects__title">Projects</h2>
             {projectsComponent}
         </section>
