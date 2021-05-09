@@ -1,6 +1,8 @@
 import React from 'react';
 import "../../styles/main.css";
 import SendArrow from "../../assets/portfolio-assets/send-arrow.svg";
+import LinkedInIcon from "../../assets/portfolio-assets/linkedin.svg";
+
 
 const Contact = () => {
     return (
@@ -14,8 +16,8 @@ const Contact = () => {
                     <div className="portfolio-contact__divider" />
                     <div className="portfolio-contact__contact-info-icons-wrapper">
                         <span className="portfolio-contact__contact-text">Reach out  to me via Email, LinkedIn or send me a message here - I'd love to connect with you!</span>
-                        <a className="portfolio-contact__contact-icon-wrapper" href="">
-                            <img className="portfolio-contact__icon" src="" alt="linked in link" />
+                        <a className="portfolio-contact__contact-icon-wrapper" href="https://www.linkedin.com/in/daniel-villaverde/" target="_blank" rel="noreferrer">
+                            <img className="portfolio-contact__icon" src={LinkedInIcon} alt="linked in link" />
                         </a>
                     </div>
                 </div>
