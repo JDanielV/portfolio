@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
@@ -7,16 +7,26 @@ import TerranovaImage from "../../assets/portfolio-assets/terranova-mobile-cropp
 import TorumImage from "../../assets/portfolio-assets/torum-mobile-cropped.jpg";
 import LightMindImage from "../../assets/portfolio-assets/lightmind-mobile.JPG";
 import { Link } from "react-router-dom";
-import Aos from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 SwiperCore.use([Pagination]);
 
 const ProjectsSection = ({ breakpoint }) => {
 
+    const [triggerAosInit, setTriggerAosInit] = useState(false);
+
     useEffect(() => {
-        Aos.init();
+        AOS.init();
+
+        setTimeout(() => {
+            setTriggerAosInit(!triggerAosInit);
+        }, 5);
     }, []);
+
+    useEffect(() => {
+        AOS.init();
+    }, [triggerAosInit]);
 
     const projectSlides = [
         {
@@ -108,10 +118,10 @@ const ProjectsSection = ({ breakpoint }) => {
                         const internalLink = project.projectLink === "/torum";
 
                         return (
-                            <div key={project.projectName} data-aos={project.projectLink === "/torum" ? "fade-left" : "fade-right"} data-aos-duration="500" data-aos-once="true">
+                            <div key={project.projectName} data-aos={project.projectLink === "/torum" ? "fade-left" : "fade-right"} data-aos-duration={project.projectName === "Light Mind (Video)" ? "1000" : "500"} data-aos-once="true">
                                 {internalLink ?
                                     <Link className="portfolio-projects__project-link" to={project.projectLink}>
-                                        <div className="portfolio-projects__project-container">
+                                        <div className="portfolio-projects__project-container" style={{ flexDirection: "row-reverse" }}>
                                             <div className="portfolio-projects__project-img-side">
                                                 <div className="portfolio-projects__project-img-wrapper">
                                                     <img className="portfolio-projects__project-img" src={project.projectImage} alt="" />

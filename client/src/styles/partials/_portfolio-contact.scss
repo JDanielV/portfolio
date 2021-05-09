@@ -7,11 +7,36 @@
     color: rgba(255, 255, 255, 0.705);
     position: relative;
 
+    &__main-wrapper {
+
+        @include tablet {
+       
+        }
+    }
+
+    &__left-side-wrapper {
+
+        @include tablet {
+            
+        }
+       
+    }
+
+    &__right-side-wrapper {
+        @include tablet {
+        
+        }
+    }
+
     &__title {
         font-size: 2rem;
         margin-bottom: 1.5rem;
         font-family: "BaiJamjuree-Bold";
         color: $platinum-white;
+
+        @include tablet {
+            font-size: 2.7rem;
+        }
     }
 
     &__contact-text {
@@ -39,6 +64,13 @@
         height: .1rem;
         background: linear-gradient(to right, $champagne-yellow 40%, $platinum-white);
         margin: 1rem 0 1.5rem 0;
+
+        @include tablet {
+            // margin: .7rem 0 1rem 0;
+            height: 4px;
+            border-radius: 2px;
+            width: 4.5rem;
+        }
     }
     
     &__contact-icon-wrapper {
@@ -48,6 +80,8 @@
     &__form-wrapper {
         display: flex;
         flex-direction: column;
+        max-width: 30rem;
+        margin: 0 auto;
     }
 
     &__form-inputs-wrapper {

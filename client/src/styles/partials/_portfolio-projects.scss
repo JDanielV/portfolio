@@ -38,6 +38,7 @@
         @include tablet {
             height: 25rem;
             margin-bottom: 2rem;
+            display: flex;
         }
     }
 
@@ -46,6 +47,11 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+
+        @include tablet {
+            height: 100%;
+            width: 50%;
+        }
     }
 
     &__project-img {
@@ -54,6 +60,11 @@
 
     &__project-info-side {
         padding: 1rem;
+
+        @include tablet {
+            width: 50%;
+            padding: 2rem;
+        }
     }
 
     &__project-title {
