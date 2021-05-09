@@ -85,18 +85,22 @@
         &-links {
             padding: 0;
             list-style-type: none;
-            font-family: "";
+            font-family: "BaiJamjuree-Regular";
             color: $platinum-white;
         }
 
         &-link {
-            font-family: "BaiJamjuree-Regular";
             text-transform: capitalize;
             margin-bottom: 1.5rem;
             font-size: 3rem;
             overflow: hidden;
             text-decoration: none;
             color: $platinum-white;
+
+            @include tablet {
+                font-size: 5rem;
+                padding-left: 1.5rem;
+            }
 
             &-text {
                 display: inline-block;

@@ -2960,18 +2960,24 @@
 .portfolio-header__mobile-nav-links {
   padding: 0;
   list-style-type: none;
-  font-family: "";
+  font-family: "BaiJamjuree-Regular";
   color: #E9EDEB;
 }
 
 .portfolio-header__mobile-nav-link {
-  font-family: "BaiJamjuree-Regular";
   text-transform: capitalize;
   margin-bottom: 1.5rem;
   font-size: 3rem;
   overflow: hidden;
   text-decoration: none;
   color: #E9EDEB;
+}
+
+@media (min-width: 768px) {
+  .portfolio-header__mobile-nav-link {
+    font-size: 5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 .portfolio-header__mobile-nav-link-text {
