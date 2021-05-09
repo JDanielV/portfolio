@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../../styles/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
@@ -7,10 +7,16 @@ import TerranovaImage from "../../assets/portfolio-assets/terranova-mobile-cropp
 import TorumImage from "../../assets/portfolio-assets/torum-mobile-cropped.jpg";
 import LightMindImage from "../../assets/portfolio-assets/lightmind-mobile.JPG";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 SwiperCore.use([Pagination]);
 
 const ProjectsSection = ({ breakpoint }) => {
+
+    useEffect(() => {
+        Aos.init();
+    }, []);
 
     const projectSlides = [
         {
@@ -102,7 +108,7 @@ const ProjectsSection = ({ breakpoint }) => {
                         const internalLink = project.projectLink === "/torum";
 
                         return (
-                            <div key={project.projectName}>
+                            <div key={project.projectName} data-aos={project.projectLink === "/torum" ? "fade-left" : "fade-right"} data-aos-duration="500" data-aos-once="true">
                                 {internalLink ?
                                     <Link className="portfolio-projects__project-link" to={project.projectLink}>
                                         <div className="portfolio-projects__project-container">

@@ -7,11 +7,19 @@
     color: rgba(255, 255, 255, 0.705);
     height: 100vh;
 
+    @include tablet {
+        height: fit-content;
+    }
+
     &__title {
         font-size: 2rem;
         margin-bottom: 1.5rem;
         font-family: "BaiJamjuree-Bold";
         color: $platinum-white;
+        
+        @include tablet {
+            font-size: 2.7rem;
+        }
     }
 
     &__project-link {
@@ -26,7 +34,11 @@
         background: rgba(5, 0, 0, 0.438);
         backdrop-filter: blur(2px);
         overflow: hidden;
-        
+
+        @include tablet {
+            height: 25rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__project-img-side {
