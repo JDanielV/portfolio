@@ -3412,6 +3412,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 5rem;
+  margin: 4rem auto 4rem auto;
 }
 
 @media (min-width: 768px) {
@@ -3419,6 +3420,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -3426,16 +3430,25 @@
   height: 17rem;
   width: 17rem;
   overflow: hidden;
-  margin: auto;
+  margin: auto auto 2rem auto;
   border-radius: 170px;
-  margin-bottom: 2rem;
   background: url("./../assets/portfolio-assets/about-me-pic.jpg");
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .portfolio-about-me__img-wrapper {
+    margin: 0 4rem 0 0;
+  }
 }
 
 .portfolio-about-me__img {
   -webkit-transform: translate(-4rem, -3rem);
           transform: translate(-4rem, -3rem);
+}
+
+.portfolio-about-me__subtitle-text-wrapper {
+  max-width: 22rem;
 }
 
 @media (min-width: 768px) {

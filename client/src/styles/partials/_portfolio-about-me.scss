@@ -8,20 +8,25 @@
     position: relative;
     z-index: 1;
     margin-bottom: 5rem;
+    margin: 4rem auto 4rem auto;
 
     @include tablet {
         display: flex;
+        justify-content: center;
     }
 
     &__img-wrapper {
         height: 17rem;
         width: 17rem;
         overflow: hidden;
-        margin: auto;
-        border-radius: 170px;
-        margin-bottom: 2rem;
+        margin: auto auto 2rem auto;
+        border-radius: 170px;  
         background: url('./../assets/portfolio-assets/about-me-pic.jpg');
         background-size: cover;
+
+        @include tablet {
+            margin: 0 4rem 0 0;
+        }
         
     }
 
@@ -30,6 +35,7 @@
     }
 
     &__subtitle-text-wrapper {
+        max-width: 22rem;
         
         @include tablet {
             width: 50%;
