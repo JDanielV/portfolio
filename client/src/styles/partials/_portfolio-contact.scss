@@ -17,20 +17,24 @@
 
         @include desktop {
             display: flex;
+            width: 100%;
+            justify-content: space-between;
         }
     }
 
     &__left-side-wrapper {
 
         @include desktop {
-        width: 40%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
         }
         
     }
 
     &__right-side-wrapper {
         @include desktop {
-            width: 40%;
+            width: 50%;
         }
     }
 
@@ -57,6 +61,10 @@
         margin-bottom: 2rem;
         display: block;
         letter-spacing: 1px;
+
+        @include desktop {
+            font-size: 1.4rem;
+        }
 
         &--bold {
             display: block;
@@ -89,10 +97,14 @@
         margin: 1rem 0 1rem 0;
 
         @include tablet {
-            // margin: .7rem 0 1rem 0;
             height: 4px;
             border-radius: 2px;
             width: 4.5rem;
+        }
+
+        @include desktop {
+            margin: 1.5rem 0 1.5rem 0;
+            width: 6rem;
         }
     }
 
@@ -106,10 +118,25 @@
         width: 1.7rem;
         height: 1.7rem;
         cursor: pointer;
+
+        @include desktop {
+            width: 2.1rem;
+            height: 2.1rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__icon {
-        filter: invert(85%);
+        filter: invert(100%);
+        transition: all .3s ease-in-out;
+
+        @include desktop { 
+            filter: invert(80%);
+
+            &:hover {
+                filter: invert(100%);
+            }
+        }
     }
 
     &__form-wrapper {
@@ -117,10 +144,18 @@
         flex-direction: column;
         max-width: 30rem;
         margin: 0 auto;
+
+        @include desktop {
+            max-width: 40rem;
+        }
     }
 
     &__form-inputs-wrapper {
         margin-bottom: 2rem;
+
+        @include desktop {
+            margin-bottom: .5rem;
+        }
     }
 
     &__form-input {
@@ -141,6 +176,12 @@
             background: rgba(255, 255, 255, 0.931);
             color: #000029;
         }
+
+        @include desktop {
+            font-size: 1.2rem;
+            height: 3.2rem;
+            margin-bottom: 1rem;
+        }
     }
 
     &__form-message-span {
@@ -149,6 +190,10 @@
         text-transform: uppercase;
         letter-spacing: 6px;
         font-family: "BaiJamjuree-Regular";
+
+        @include desktop {
+            font-size: 1.2rem;
+        }
     }
 
     &__form-textarea {
@@ -170,6 +215,11 @@
             background: rgba(255, 255, 255, 0.931);
             color: #000029;
         }
+
+        @include desktop {
+            height: 10rem;
+            font-size: 1.2rem;
+        }
     }
 
     &__form-button-wrapper {
@@ -179,15 +229,20 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        // border: 1px solid rgba(255, 255, 255, 0.452);
-        border: none;
+        border: 1px solid rgba(255, 255, 255, 0);
         background: transparent;
         color: rgba(255, 255, 255, 0.705);
         border-radius: 1px;
         font-size: 1rem;
         overflow: hidden;
         position: relative;
-        padding-right: 1.5rem;
+        padding-right: 2rem;
+        cursor: pointer;
+        transition: all .3s ease-out;
+
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.452);
+        }
     }
 
     &__form-button-text {
@@ -200,7 +255,7 @@
     &__form-button-arrow {
         height: 70%;
         position: absolute;
-        right: .5rem;
+        right: .8rem;
        
     }
 }
