@@ -66,7 +66,7 @@ const PortfolioContainer = () => {
 
     return (
         <div className="portfolio-container">
-            <ParticleBg offsetY={offsetY} />
+            <ParticleBg offsetY={offsetY} breakpoint={breakpoint} />
             <Header breakpoint={breakpoint} portfolioScrollThreshold={portfolioScrollThreshold} />
             <HeroSection />
             <AboutMe />

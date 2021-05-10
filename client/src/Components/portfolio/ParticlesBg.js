@@ -1,12 +1,13 @@
 import React from 'react';
 import "../../styles/main.css";
 import Particles from "react-particles-js";
-import ParticlesConfig from "../../config/particle-config";
+import ParticlesConfigMobile from "../../config/particle-config-mobile";
+import ParticlesConfigDesktop from "../../config/particle-config-desktop";
 
-const ParticlesBg = ({ offsetY }) => {
+const ParticlesBg = ({ offsetY, breakpoint }) => {
     return (
         <div className="particles-background-container" style={{ transform: `translateY(-${offsetY * .05}px)` }} >
-            <Particles className="particles-background" params={ParticlesConfig} />
+            <Particles className="particles-background" params={breakpoint === "desktop" ? ParticlesConfigDesktop : ParticlesConfigMobile} />
         </div>
     )
 };
