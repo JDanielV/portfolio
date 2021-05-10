@@ -9,9 +9,7 @@ import ParticleBg from "./ParticlesBg";
 
 const PortfolioContainer = () => {
 
-    const [portfolioScrollThreshold, setPortfolioScrollThreshold] = useState({
-        portfolioScrollThreshold: false
-    });
+    const [portfolioScrollThreshold, setPortfolioScrollThreshold] = useState(false);
 
     const [offsetY, setOffsetY] = useState(0);
 
@@ -57,10 +55,10 @@ const PortfolioContainer = () => {
 
     const handleScroll = () => {
         if (window.pageYOffset > 99) {
-            setPortfolioScrollThreshold({ portfolioScrollThreshold: true });
+            setPortfolioScrollThreshold(true);
         };
         if (window.pageYOffset === 0) {
-            setPortfolioScrollThreshold({ portfolioScrollThreshold: false });
+            setPortfolioScrollThreshold(false);
         }
 
         setOffsetY(window.pageYOffset);
@@ -69,7 +67,7 @@ const PortfolioContainer = () => {
     return (
         <div className="portfolio-container">
             <ParticleBg offsetY={offsetY} />
-            <Header breakpoint={breakpoint} />
+            <Header breakpoint={breakpoint} portfolioScrollThreshold={portfolioScrollThreshold} />
             <HeroSection />
             <AboutMe />
             <ProjectsSection breakpoint={breakpoint} />

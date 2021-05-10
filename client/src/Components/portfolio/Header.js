@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/main.css";
 import CodingIcon from "../../assets/portfolio-assets/hero-icon.svg";
 import MobileNav from "./MobileNav";
 
-const Header = ({ breakpoint }) => {
+const Header = ({ breakpoint, portfolioScrollThreshold }) => {
 
     const [showMobileNav, setShowMobileNav] = useState(false);
     const [inTransition, setInTransition] = useState(false);
+    const [headerClasses, setHeaderClasses] = useState("portfolio-header");
 
     const toggleMobileNav = () => {
         if (!inTransition) {
@@ -33,23 +34,37 @@ const Header = ({ breakpoint }) => {
         }
     }
 
+    useEffect(() => {
+        if (breakpoint === "desktop") {
+            if (portfolioScrollThreshold)
+                setHeaderClasses("portfolio-header");
+            else
+                setHeaderClasses("portfolio-header portfolio-header--tall")
+        }
+        else
+            setHeaderClasses("portfolio-header");
+    }, [portfolioScrollThreshold]);
+
     const navButtons = [
         {
             buttonText: "portfolio",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#projects-section"
         },
         {
             buttonText: "about",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#about-me-section"
         },
         {
             buttonText: "contact",
-            buttonColor: ""
+            buttonColor: "",
+            buttonLink: "#contact-section"
         },
     ];
 
     return (
-        <header className="portfolio-header">
+        <header className={headerClasses}>
             <a className="portfolio-header__nav-link-logo" href="#hero-section" onClick={mobileNavLogoPress}>
                 <img className="portfolio-header__nav-logo-img" src={CodingIcon} alt="portfolio logo" />
             </a>
@@ -61,11 +76,11 @@ const Header = ({ breakpoint }) => {
                 <ul className="portfolio-header__nav-buttons-wrapper">
                     {navButtons.map((button) => {
                         return (
-                            <li className="portfolio-header__nav-button" key={button.buttonText}>
+                            <a className="portfolio-header__nav-button-text-link" href={button.buttonLink} key={button.buttonText}>
                                 <span className="portfolio-header__nav-button-text">
                                     {button.buttonText}
                                 </span>
-                            </li>
+                            </a>
                         )
                     })}
                 </ul>
