@@ -4,27 +4,41 @@
 
 .portfolio-projects {
     padding: 4.9rem 2rem 0 2rem;
-    color: rgba(255, 255, 255, 0.705);
+    // color: rgba(255, 255, 255, 0.705);
+    color: $platinum-white;
     height: 100vh;
 
     @include tablet {
         height: fit-content;
+        padding: 5rem 4rem;
+    }
+
+    @include desktop {
+        padding: 5rem 12rem;
     }
 
     &__title {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
         font-family: "BaiJamjuree-Bold";
         color: $platinum-white;
+        letter-spacing: 6px;
+        text-transform: uppercase;
         
         @include tablet {
-            font-size: 2.7rem;
+            font-size: 2rem;
+            letter-spacing: 7px;
+        }
+
+        @include desktop {
+            font-size: 2.3rem;
+            margin-bottom: 3rem;
         }
     }
 
     &__project-link {
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.705);
+        color: $platinum-white;
     }
 
     &__project-container {
@@ -36,9 +50,14 @@
         overflow: hidden;
 
         @include tablet {
-            height: 25rem;
-            margin-bottom: 2rem;
+            height: 20rem;
+            margin-bottom: 3rem;
             display: flex;
+        }
+
+        @include desktop {
+            margin-bottom: 5rem;
+            height: 25rem;
         }
     }
 
@@ -65,18 +84,41 @@
             width: 50%;
             padding: 2rem;
         }
+
+        @include desktop {
+            padding: 3rem 6rem;
+        }
     }
 
     &__project-title {
         font-family: "BaiJamjuree-Bold";
         font-size: 1.4rem;
         margin-bottom: .3rem;
+
+        @include desktop {
+            font-size: 2.1rem;
+            margin-bottom: .5rem;
+            letter-spacing: 2px;
+        }
     }
 
     &__project-subtitle {
         display: inline-block;
         margin-bottom: .5rem;
         font-family: "OpenSans-Regular";
+
+        @include desktop {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__project-details {
+        
+        @include desktop {
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
     }
 }
 
