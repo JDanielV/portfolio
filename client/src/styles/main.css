@@ -3173,6 +3173,14 @@
   overflow: hidden;
 }
 
+@media (min-width: 1440px) {
+  .portfolio-hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .portfolio-hero__main-wrapper {
   height: 100%;
   width: 100%;
@@ -3183,11 +3191,23 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-transition: all .5 ease-in-out;
+  transition: all .5 ease-in-out;
 }
 
 @media (min-width: 1024px) {
   .portfolio-hero__main-wrapper {
     padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio-hero__main-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
   }
 }
 
@@ -3207,6 +3227,17 @@
 @media (min-width: 768px) {
   .portfolio-hero__text-divider-wrapper {
     margin: 5rem 0 0 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio-hero__text-divider-wrapper {
+    height: 90%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 40%;
+    padding: 0 0 9rem 9rem;
   }
 }
 
@@ -3331,6 +3362,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .portfolio-hero__hero-title-wrapper {
+    font-size: 4rem;
+  }
+}
+
 .portfolio-hero__hero-title {
   z-index: 1;
   background: -webkit-gradient(linear, left top, right top, from(#F9D28B), to(#E9EDEB));
@@ -3396,6 +3433,16 @@
           transform: translateX(0);
 }
 
+@media (min-width: 1440px) {
+  .portfolio-hero__img-wrapper {
+    width: 60%;
+    height: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .portfolio-hero__img {
   min-width: 120%;
   -webkit-transform: translateY(-10%);
@@ -3414,6 +3461,13 @@
     -webkit-transform: translate(10rem, -10rem);
             transform: translate(10rem, -10rem);
     min-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio-hero__img {
+    -webkit-transform: translate(-8rem, -2rem);
+            transform: translate(-8rem, -2rem);
   }
 }
 
