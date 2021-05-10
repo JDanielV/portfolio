@@ -27,11 +27,12 @@
         @include tablet {
             margin: 0 4rem 0 0;
         }
-        
-    }
 
-    &__img {
-        transform: translate(-4rem,-3rem);
+        @include desktop {
+            height: 23rem;
+            border-radius: 20px;
+        }
+        
     }
 
     &__subtitle-text-wrapper {
@@ -39,6 +40,11 @@
         
         @include tablet {
             width: 50%;
+        }
+
+        @include desktop {
+            max-width: 60rem;
+            width: 51%;
         }
     }
 
@@ -54,11 +60,31 @@
             font-size: 1.7rem;
         }
 
+        @include desktop {
+            font-size: 2rem;
+            margin-right: 3rem;
+            padding-top: 1.5rem;
+        }
+
         &--highlight {
             font-family: "BaiJamjuree-Bold";
             background: linear-gradient(to right, $champagne-yellow, $platinum-white);
             background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        &-greeting {
+            @include desktop {
+                display: block;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__texts-wrapper {
+        @include desktop {
+            padding-top: 1.2rem;
+            width: 85%;
         }
     }
 
@@ -68,9 +94,10 @@
         margin-bottom: 1rem;
         letter-spacing: 1px;
 
-        // @include tablet {
-        //     font-size: 1.1rem;
-        // }
+        @include desktop {
+            font-size: 1.3rem;
+            line-height: 2.1rem;
+        }
 
         &--highlight1 {
             display: inline-block;
@@ -105,9 +132,7 @@
                 padding-bottom: 1px;
                 display: inline-block;
                 background: linear-gradient(to right, $sap-green, $platinum-white);
-                // overflow: hidden;
             }
-            
         }
     }
 }

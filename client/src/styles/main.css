@@ -2760,11 +2760,9 @@
   color: #E9EDEB;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   max-width: 100vw;
   overflow: hidden;
-  left: 0;
-  top: 0;
   font-family: "OpenSans-Regular", sans-serif;
 }
 
@@ -2846,6 +2844,7 @@
 
 .portfolio-header {
   width: 100%;
+  max-width: 100vw;
   height: 4.9rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3562,9 +3561,11 @@
   }
 }
 
-.portfolio-about-me__img {
-  -webkit-transform: translate(-4rem, -3rem);
-          transform: translate(-4rem, -3rem);
+@media (min-width: 1440px) {
+  .portfolio-about-me__img-wrapper {
+    height: 23rem;
+    border-radius: 20px;
+  }
 }
 
 .portfolio-about-me__subtitle-text-wrapper {
@@ -3574,6 +3575,13 @@
 @media (min-width: 768px) {
   .portfolio-about-me__subtitle-text-wrapper {
     width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio-about-me__subtitle-text-wrapper {
+    max-width: 60rem;
+    width: 51%;
   }
 }
 
@@ -3592,6 +3600,14 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .portfolio-about-me__subtitle {
+    font-size: 2rem;
+    margin-right: 3rem;
+    padding-top: 1.5rem;
+  }
+}
+
 .portfolio-about-me__subtitle--highlight {
   font-family: "BaiJamjuree-Bold";
   background: -webkit-gradient(linear, left top, right top, from(#F9D28B), to(#E9EDEB));
@@ -3600,11 +3616,32 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 1440px) {
+  .portfolio-about-me__subtitle-greeting {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .portfolio-about-me__texts-wrapper {
+    padding-top: 1.2rem;
+    width: 85%;
+  }
+}
+
 .portfolio-about-me__text {
   line-height: 1.7rem;
   text-align: start;
   margin-bottom: 1rem;
   letter-spacing: 1px;
+}
+
+@media (min-width: 1440px) {
+  .portfolio-about-me__text {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+  }
 }
 
 .portfolio-about-me__text--highlight1 {
@@ -3873,6 +3910,7 @@
   padding: 4.9rem 2rem 3rem 2rem;
   color: rgba(255, 255, 255, 0.705);
   position: relative;
+  max-width: 100vw;
 }
 
 .portfolio-contact__title {
