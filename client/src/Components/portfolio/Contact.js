@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../styles/main.css";
 import SendArrow from "../../assets/portfolio-assets/send-arrow.svg";
 import LinkedInIcon from "../../assets/portfolio-assets/linkedin.svg";
-
+import axios from "axios";
 
 const Contact = () => {
 
@@ -14,6 +14,15 @@ const Contact = () => {
     });
 
     const [messageSent, setMessageSent] = useState(false);
+    const [emptyFieldsPrompt, setEmptyFieldsPrompt] = useState(false);
+
+    const handleSendMessageToggle = () => {
+        setMessageSent(true);
+
+        setTimeout(() => {
+            setMessageSent(false);
+        }, 4000);
+    }
 
     const handleContactFormValues = (e) => {
 
@@ -52,27 +61,23 @@ const Contact = () => {
     const submitContactForm = (e) => {
         e.preventDefault();
 
-        if (!contactFormValues.name || !contactFormValues.email || !contactFormValues.message) {
-            //     setEmptyFields(true);
-            //   } else {
-            //     setEmptyFields(false);
-            //     axios
-            //       .post("/api", data)
-            //       .then((response) => {
-            //         console.log(response);
-            //         setMessageSent(true);
-            //         resetForm();
-            //       })
-            //       .catch((err) => {
-            //         console.log(err);
-            //         setMessageSent(false);
-            //       });
-            //   }
-            console.log("NOPE - FILL OUT ALL FIELDS");
+        if (contactFormValues.name && contactFormValues.email && contactFormValues.message) {
+            console.log(contactFormValues);
+            axios
+                .post("http://localhost:5000/send", contactFormValues)
+                .then((response) => {
+                    console.log(response);
+                    handleSendMessageToggle();
+                    resetForm();
+                })
+                .catch((err) => {
+                    console.log(err);
+                    setMessageSent(false);
+                });
         }
         else {
-            console.log("message sent :)")
-            resetForm();
+            console.log("Fill all required fields");
+            setEmptyFieldsPrompt(true);
         }
     }
 
