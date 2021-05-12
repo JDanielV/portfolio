@@ -56,7 +56,7 @@ const MobileNav = ({ showMobileNav, toggleMobileNav }) => {
     }, [showMobileNav])
 
     return (
-        <nav ref={mobileNavRef} className={showMobileNav ? "portfolio-header__mobile-nav portfolio-header__mobile-nav--show" : "portfolio-header__mobile-nav"}>
+        <nav ref={mobileNavRef} className={showMobileNav ? "portfolio-header__mobile-nav portfolio-header__mobile-nav--show" : "portfolio-header__mobile-nav"} style={{ height: window.innerHeight }}>
             <div className="portfolio-header__mobile-nav-main-wrapper">
                 <ul className="portfolio-header__mobile-nav-links">
                     {navButtons.map((button) => {

@@ -226,6 +226,9 @@ const ProjectsSection = ({ breakpoint }) => {
     return (
         <section className="portfolio-projects" id="projects-section">
             <h2 className="portfolio-projects__title">Projects</h2>
+            <p className="portfolio-projects__subtitle">
+
+            </p>
             {projectsComponent}
         </section>
     )

@@ -5,7 +5,7 @@ import Typewriter from "./Typewriter";
 
 const LandingSection = (props) => {
 
-    const typewriterStrings = ["Crypto Community", "Crypto Enthusiasts", "Crypto Content Writers", "Crypto Project Owners"];
+    const typewriterStrings = ["Crypto Community", "Crypto Enthusiasts", "Content Writers", "Project Owners"];
 
     const [buttonHover, setButtonHover] = useState(false);
 

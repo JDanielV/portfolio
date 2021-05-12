@@ -5,14 +5,15 @@
 .torum-landing {
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
+  height: 43rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-color: black;
   font-family: "Poppins-Regular";
 
-  @include desktop {
+  @include tablet {
+    height: 100vh;
   }
 
   &__main {
@@ -48,6 +49,7 @@
   }
 
   &__title-wrapper {
+    display: flex;
     @include tablet {
     }
 

@@ -4,13 +4,16 @@
 
 .portfolio-hero {
     padding: 4.9rem 2rem 0 2rem;
-    height: 100vh;
+    height: 44rem;
     display: flex;
     align-items: center;
     z-index: 1;
     position: relative;
     overflow: hidden;
     
+    @include tablet {
+        height: 100vh;
+    }
 
     @include desktop {
         justify-content: center;
@@ -79,7 +82,7 @@
         width: 4rem;
         background: linear-gradient(to right, $champagne-yellow, $platinum-white);
         height: 2px;
-        margin: 0 0 1.5rem 2rem;
+        margin: 0 0 1rem 2rem;
         border-radius: 1px;
         display: block;
         opacity: 0;

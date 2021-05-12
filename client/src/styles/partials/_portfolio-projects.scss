@@ -4,9 +4,8 @@
 
 .portfolio-projects {
     padding: 4.9rem 2rem 0 2rem;
-    // color: rgba(255, 255, 255, 0.705);
     color: $platinum-white;
-    height: 100vh;
+    height: 41rem;
 
     @include tablet {
         height: fit-content;
@@ -22,7 +21,7 @@
         margin-bottom: 2rem;
         font-family: "BaiJamjuree-Bold";
         color: $platinum-white;
-        letter-spacing: 6px;
+        letter-spacing: 5px;
         text-transform: uppercase;
         
         @include tablet {
@@ -94,7 +93,7 @@
         font-family: "BaiJamjuree-Bold";
         font-size: 1.4rem;
         margin-bottom: .3rem;
-
+        
         @include desktop {
             font-size: 2.1rem;
             margin-bottom: .5rem;

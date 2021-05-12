@@ -62,9 +62,8 @@ const Contact = () => {
         e.preventDefault();
 
         if (contactFormValues.name && contactFormValues.email && contactFormValues.message) {
-            console.log(contactFormValues);
             axios
-                .post("http://localhost:5000/send", contactFormValues)
+                .post("/api", contactFormValues)
                 .then((response) => {
                     console.log(response);
                     handleSendMessageToggle();
@@ -78,6 +77,9 @@ const Contact = () => {
         else {
             console.log("Fill all required fields");
             setEmptyFieldsPrompt(true);
+            setTimeout(() => {
+                setEmptyFieldsPrompt(false);
+            }, 4000);
         }
     }
 
@@ -87,8 +89,9 @@ const Contact = () => {
             <div className="portfolio-contact__main-wrapper">
                 <div className="portfolio-contact__left-side-wrapper">
                     <span className="portfolio-contact__contact-text--bold">Email me:</span>
-                    <span className="portfolio-contact__contact-text--highlight">j.danielv@outlook.com</span>
-                    <div className="portfolio-contact__divider" />
+                    <a href="mailto:j.danielv@outlook.com" className="portfolio-contact__contact-text--highlight"><span className="portfolio-contact__contact-text--highlight">j.danielv@outlook.com</span>
+                        <div className="portfolio-contact__divider" />
+                    </a>
                     <div className="portfolio-contact__contact-info-icons-wrapper">
                         <span className="portfolio-contact__contact-text">Reach out  to me via Email, LinkedIn or send me a message here - I'd love to connect with you!</span>
                         <a className="portfolio-contact__contact-icon-wrapper" href="https://www.linkedin.com/in/daniel-villaverde/" target="_blank" rel="noreferrer">
@@ -106,15 +109,20 @@ const Contact = () => {
                                 <input type="text" name="company" className="portfolio-contact__form-input" placeholder="Company (optional)" onChange={handleContactFormValues} />
                             </div>
                         </div>
-                        <div>
+                        <div className="portfolio-contact__form-textarea-wrapper">
                             <span className="portfolio-contact__form-message-span">Message</span>
                             <textarea type="text" name="message" className="portfolio-contact__form-textarea" placeholder="*How's your day going?" onChange={handleContactFormValues} />
+                            <div className="portfolio-contact__form-prompts-wrapper">
+                                {messageSent && <span className="portfo/lio-contact__form-message-prompt">Message sent!</span>}
+                                {emptyFieldsPrompt && <span className="portfo/lio-contact__form-message-prompt">Make sure to fill the required fields!</span>}
+                            </div>
                         </div>
                         <button type="submit" className="portfolio-contact__form-button-wrapper" >
                             <span className="portfolio-contact__form-button-text">Send</span>
                             <img className="portfolio-contact__form-button-arrow" src={SendArrow} alt="send message" />
                         </button>
                     </form>
+
                 </div>
             </div>
         </section>
