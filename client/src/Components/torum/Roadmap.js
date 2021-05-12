@@ -117,7 +117,7 @@ const RoadmapSection = () => {
                                 </div>
                             </SwiperSlide>
                         )
-                    })};
+                    })}
                 </Swiper>
             </div>
         </section>
