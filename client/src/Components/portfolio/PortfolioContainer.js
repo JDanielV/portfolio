@@ -4,8 +4,6 @@ import HeroSection from "./HeroSection";
 import AboutMe from "./AboutMe";
 import ProjectsSection from "./ProjectsSection";
 import Contact from "./Contact";
-import ParticleBg from "./ParticlesBg";
-
 
 const PortfolioContainer = () => {
 
@@ -66,7 +64,6 @@ const PortfolioContainer = () => {
 
     return (
         <div className="portfolio-container">
-            <ParticleBg offsetY={offsetY} breakpoint={breakpoint} />
             <Header breakpoint={breakpoint} portfolioScrollThreshold={portfolioScrollThreshold} />
             <HeroSection />
             <AboutMe />
