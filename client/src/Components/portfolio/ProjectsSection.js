@@ -111,6 +111,7 @@ const ProjectsSection = ({ breakpoint }) => {
                 </Swiper>)
             break;
         case 'tablet':
+        case 'laptop':
         case 'desktop':
             projectsComponent = (
                 <>
@@ -227,7 +228,7 @@ const ProjectsSection = ({ breakpoint }) => {
         <section className="portfolio-projects" id="projects-section">
             <h2 className="portfolio-projects__title">Projects</h2>
             <p className="portfolio-projects__subtitle">
-
+                {breakpoint !== "mobile" ? "Browse through some of the projects I've built." : "Swipe right to browse through some of the projects I've built."}
             </p>
             {projectsComponent}
         </section>
