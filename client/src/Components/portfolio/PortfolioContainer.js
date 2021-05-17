@@ -24,8 +24,10 @@ const PortfolioContainer = () => {
 
         if (window.innerWidth < 768)
             setBreakpoint('mobile');
-        else if (window.innerWidth < 1440)
-            setBreakpoint('tablet');
+        else if (window.innerWidth < 1199)
+            setBreakpoint('tablet')
+        else if (window.innerWidth < 1439)
+            setBreakpoint('laptop');
         else
             setBreakpoint('desktop');
 
@@ -35,10 +37,12 @@ const PortfolioContainer = () => {
     }, []);
 
     useEffect(() => {
-        if (windowSize < 768)
+        if (window.innerWidth < 768)
             setBreakpoint('mobile');
-        else if (windowSize < 1440)
-            setBreakpoint('tablet');
+        else if (window.innerWidth < 1199)
+            setBreakpoint('tablet')
+        else if (window.innerWidth < 1439)
+            setBreakpoint('laptop');
         else
             setBreakpoint('desktop');
     }, [windowSize]);

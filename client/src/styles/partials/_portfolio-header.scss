@@ -28,7 +28,7 @@
         height: 100%;
         display: none;
 
-        @include desktop {
+        @include laptop {
             display: flex;
             justify-content: flex-end;
         }
@@ -36,7 +36,7 @@
 
     &__nav-buttons-wrapper {
 
-        @include desktop {
+        @include laptop {
             display: flex;
             list-style: none;
             padding: 0;
@@ -49,7 +49,7 @@
 
     &__nav-button {
 
-        @include desktop {
+        @include laptop {
             width: 8rem;
             display: flex;
             justify-content: center;
@@ -58,7 +58,7 @@
 
     &__nav-button-text-link {
         
-        @include desktop {
+        @include laptop {
             text-decoration: none;
             color: $platinum-white;
             text-transform: uppercase;
@@ -75,7 +75,7 @@
         z-index: 3;
         cursor: pointer;
 
-        @include desktop {
+        @include laptop {
             display: none;
         }
     }
@@ -104,7 +104,6 @@
         top: 0;
         left: 0;
         width: 100vw;
-        // height: 100vh;
         overflow-y: hidden;
         z-index: 2;
         background: rgba(0, 0, 0, 0.829);

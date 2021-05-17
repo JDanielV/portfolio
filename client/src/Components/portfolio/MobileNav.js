@@ -9,7 +9,7 @@ const MobileNav = ({ showMobileNav, toggleMobileNav }) => {
 
     const navButtons = [
         {
-            buttonText: "portfolio",
+            buttonText: "projects",
             buttonColor: "",
             buttonLink: "#projects-section"
         },

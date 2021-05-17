@@ -35,7 +35,7 @@ const Header = ({ breakpoint, portfolioScrollThreshold }) => {
     }
 
     useEffect(() => {
-        if (breakpoint === "desktop") {
+        if (breakpoint === "laptop") {
             if (portfolioScrollThreshold)
                 setHeaderClasses("portfolio-header");
             else
