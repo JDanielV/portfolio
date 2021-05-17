@@ -17,7 +17,7 @@
         padding: 4.9rem 4rem 0 4rem;
     }
 
-    @include desktop {
+    @include laptop {
         justify-content: flex-start;
         padding: 4.9rem 12rem 0 12rem;
         margin-bottom: 10rem;
@@ -36,7 +36,7 @@
             margin: 0 4rem 0 0;
         }
 
-        @include desktop {
+        @include laptop {
             height: 30rem;
             width: 25rem;
             border-radius: 20px;

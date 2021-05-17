@@ -30,8 +30,12 @@
             padding-bottom: 1.5rem;
         }
 
-        @include desktop {
+        @include laptop {
             flex-direction: row;
+            width: 100%;
+        }
+
+        @include desktop {
             width: 100%;
         }
     }
@@ -45,6 +49,13 @@
 
         @include tablet {
             margin: 5rem 0 0 4rem;
+        }
+
+        @include laptop {
+            height: 90%;
+            justify-content: flex-end;
+            width: 40%;
+            padding: 0 0 3rem 1rem;
         }
 
         @include desktop {
@@ -63,7 +74,7 @@
         border-radius: 1px;
         opacity: 0;
         transition: all .7s ease-out;
-        transform: translateX(-100%); 
+        transform: translateX(-250%); 
 
         &--mounted {
             opacity: 1;
@@ -87,7 +98,7 @@
         display: block;
         opacity: 0;
         transition: all .9s ease-out;
-        transform: translateX(-100%); 
+        transform: translateX(-250%); 
 
         &--mounted {
             opacity: 1;
@@ -202,6 +213,10 @@
             width: 100%;
         }
 
+        @include laptop {
+            width: 100%;
+        }
+
         @include desktop {
             width: 60%;
             height: 90%;
@@ -219,6 +234,10 @@
         @include tablet-landscape {
             transform: translate(10rem, 16rem);
             min-width: 100%;
+        }
+
+        @include laptop {
+            transform: translate(-5rem, 10rem);
         }
 
         @include desktop {

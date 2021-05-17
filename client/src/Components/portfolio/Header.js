@@ -47,7 +47,7 @@ const Header = ({ breakpoint, portfolioScrollThreshold }) => {
 
     const navButtons = [
         {
-            buttonText: "portfolio",
+            buttonText: "projects",
             buttonColor: "",
             buttonLink: "#projects-section"
         },
