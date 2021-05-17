@@ -55,7 +55,7 @@
             font-size: $section-title;
         }
 
-        @include desktop {
+        @include laptop {
             width: 50rem;
         }
     }

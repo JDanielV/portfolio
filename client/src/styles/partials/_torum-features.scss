@@ -15,7 +15,7 @@
   font-family: "Poppins-Regular";
   padding: 14rem 0 0rem 0;
 
-  @include desktop {
+  @include laptop {
     padding: 15rem 0 10rem 0;
   }
 
@@ -29,7 +29,7 @@
       margin-bottom: 6rem;
     }
 
-    @include desktop {
+    @include laptop {
       width: 71.25rem;
       margin-top: 15rem;
       margin-bottom: 3rem;
@@ -56,7 +56,7 @@
       font-size: $section-title;
     }
     
-    @include desktop {
+    @include laptop {
       margin: 0 0 0 0;
       width: 100%;
       display: flex;
@@ -90,7 +90,7 @@
       font-size: $section-subtitle;
     }
 
-    @include desktop {
+    @include laptop {
       width: 55%;
       height: 7rem;
     }
@@ -105,10 +105,6 @@
       flex-direction: row;
       padding: 0 1rem;
       text-align: center;
-    }
-
-    @include desktop {
-
     }
   }
 
@@ -133,7 +129,7 @@
       height: auto;
     }
 
-    @include desktop {
+    @include laptop {
       width: 23.75rem;
       padding: 3rem 1rem;
     }
@@ -151,7 +147,7 @@
     text-transform: capitalize;
     font-size: $feature-name-mobile;
 
-    @include desktop {
+    @include laptop {
       font-size: $feature-name;
     }
   }
@@ -162,7 +158,7 @@
     text-align: center;
     line-height: 1.9rem;
 
-    @include desktop {
+    @include laptop {
       font-size: 16px;
     }
   }

@@ -21,7 +21,7 @@
     height: auto;
   }
 
-  @include desktop {
+  @include laptop {
     flex-direction: row;
     justify-content: center;
     font-family: "Poppins-Regular";

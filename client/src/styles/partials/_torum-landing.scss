@@ -26,7 +26,7 @@
     justify-content: center;
     position: relative;
 
-    @include desktop {
+    @include laptop {
       height: 58.75rem;
     }
 
@@ -40,7 +40,7 @@
       height: 25.438rem;
       padding: 0 1rem;
 
-      @include desktop {
+      @include laptop {
         width: 53.125rem;
         height: 25.438rem;
         padding: 0;
@@ -71,10 +71,7 @@
       }
     }
 
-    @include tablet {
-    }
-
-    @include desktop {
+    @include laptop {
       height: 4.5rem;
       transform: translateX(-2rem);
     }
@@ -121,7 +118,7 @@
       width: 95%;
     }
 
-    @include desktop {
+    @include laptop {
       line-height: 3.4rem;
     }
   }
@@ -157,7 +154,7 @@
         border: 2px solid white;
       }
 
-      @include desktop {
+      @include laptop {
         width: 27.5rem;
         cursor: pointer;
       }
@@ -199,11 +196,19 @@
   &__hero-img-wrapper {
     position: absolute;
     bottom: -4rem;
-    
+    max-height: 20rem;
 
     @include tablet {
       bottom: -16rem;
       width: 89%;
+      max-height: 31.5rem;
+    }
+
+    @include laptop {
+      position: absolute;
+      bottom: -10rem;
+      width: 70%;
+      max-height: none;
     }
 
     @include desktop {

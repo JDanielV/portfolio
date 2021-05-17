@@ -8,7 +8,7 @@
     padding: 1rem 2.5rem;
     font-family: "Poppins-Regular";
 
-    @include desktop {
+    @include laptop {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -19,7 +19,7 @@
         margin-bottom: 1rem;
         text-align: center;
 
-        @include desktop {
+        @include laptop {
             margin-bottom: 0;
         }
     }
@@ -29,7 +29,7 @@
         text-align: center;
         display: inline-block;
 
-        @include desktop {
+        @include laptop {
             font-size: 16px;
         }
     }
