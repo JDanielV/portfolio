@@ -3591,7 +3591,6 @@
   color: #E9EDEB;
   position: relative;
   z-index: 1;
-  margin-bottom: 5rem;
   margin: 4rem auto 4rem auto;
 }
 
@@ -3609,11 +3608,11 @@
 
 @media (min-width: 1200px) {
   .portfolio-about-me {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 4.9rem 12rem 0 12rem;
-    margin-bottom: 10rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4.9rem 0 0 0;
+    margin: 4rem auto 10rem auto;
   }
 }
 
