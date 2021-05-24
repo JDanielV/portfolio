@@ -5,11 +5,13 @@
 .portfolio-projects {
     padding: 4.9rem 2rem 0 2rem;
     color: $platinum-white;
-    height: 41rem;
+    height: fit-content;
+    margin-bottom: 6rem;
 
     @include tablet {
         height: fit-content;
         padding: 5rem 4rem;
+        margin-bottom: 0;
     }
 
     @include laptop {
@@ -39,7 +41,7 @@
         line-height: 1.7rem;
         text-align: start;
         letter-spacing: 1px;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         @include desktop {
             font-size: 1.3rem;
@@ -54,11 +56,10 @@
     }
 
     &__project-container {
-        height: 93%;
+        height: 90%;
         width: 100%;
         border-radius: 6px;
         background: rgba(5, 0, 0, 0.438);
-        // backdrop-filter: blur(2px);
         overflow: hidden;
 
         @include tablet {
@@ -86,7 +87,14 @@
     }
 
     &__project-img {
-        width: 100%
+        width: 115%;
+
+        &-wrapper {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__project-info-side {
@@ -104,7 +112,7 @@
 
     &__project-title {
         font-family: "BaiJamjuree-Bold";
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-bottom: .3rem;
         
         @include laptop {
@@ -118,6 +126,7 @@
         display: inline-block;
         margin-bottom: .5rem;
         font-family: "OpenSans-Regular";
+        font-size: .9rem;
 
         @include desktop {
             font-size: 1.3rem;
@@ -126,10 +135,23 @@
     }
 
     &__project-details {
+        font-size: .9rem;
         
         @include desktop {
             font-size: 1.3rem;
             line-height: 2rem;
+        }
+    }
+
+    &__github-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: .5rem;
+        filter: invert(80%);
+
+        &-link {
+            text-decoration: underline;
+            color: $platinum-white;
         }
     }
 }

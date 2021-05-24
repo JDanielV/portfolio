@@ -3,12 +3,15 @@ import "../../styles/main.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-import TerranovaImage from "../../assets/portfolio-assets/terranova-mobile-cropped.jpg";
-import TorumImage from "../../assets/portfolio-assets/torum-mobile-cropped.jpg";
-import LightMindImage from "../../assets/portfolio-assets/lightmind-mobile.JPG";
+import TerranovaImage from "../../assets/portfolio-assets/mckup_terranovasales_phone_01.png";
+import TerranovaImageDesktop from "../../assets/portfolio-assets/mckup_terranovasales_laptop_01_web.png";
+import TorumImage from "../../assets/portfolio-assets/mckup_torum_phone_01.png";
+import LightMindImage from "../../assets/portfolio-assets/mckup_lightmind_phone_01.png";
+import GitHubIcon from "../../assets/portfolio-assets/github.svg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 SwiperCore.use([Pagination]);
 
@@ -32,14 +35,14 @@ const ProjectsSection = ({ breakpoint }) => {
         {
             projectName: "Terranova Sales",
             projectSubtitle: "Front-end, Maps API, back-end",
-            projectDescription: "Business based in Downtown Vancouver (Canada). Developed & published their website.",
-            projectImage: TerranovaImage,
+            projectDescription: "Manufacturer's Representative Business based in Downtown Vancouver (Canada). Developed & published their website.",
+            projectImage: breakpoint === "mobile" ? TerranovaImage : TerranovaImageDesktop,
             projectLink: "https://terranovasales.ca/"
         },
         {
             projectName: "Torum Website (Practice)",
             projectSubtitle: "Front-end",
-            projectDescription: "Developed for practice. I have no affiliation with Torum, nor I am endorsing their platform.",
+            projectDescription: "Re-built from the ground up for practice. I have no affiliation with Torum or its team.",
             projectImage: TorumImage,
             projectLink: "/torum"
         },
@@ -227,9 +230,12 @@ const ProjectsSection = ({ breakpoint }) => {
     return (
         <section className="portfolio-projects" id="projects-section">
             <h2 className="portfolio-projects__title">Projects</h2>
-            <p className="portfolio-projects__subtitle">
-                {breakpoint !== "mobile" ? "Browse through some of the projects I've built." : "Swipe right to browse through some of the projects I've built."}
-            </p>
+
+            <div className="portfolio-projects__subtitle">
+                {breakpoint === "mobile" ? "Swipe" : "Browse"} through some of the projects I've built. For the details on the development of each of them, please refer to the README file in my <a className="portfolio-projects__github-icon-link" href="https://github.com/JDanielV/portfolio" target="_blank" rel="noreferrer">GitHub repository
+                    <img className="portfolio-projects__github-icon" src={GitHubIcon} alt="github link" />
+                </a>.
+            </div>
             {projectsComponent}
         </section>
     )

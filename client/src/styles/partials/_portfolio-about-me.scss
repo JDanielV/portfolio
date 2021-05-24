@@ -109,39 +109,24 @@
         }
 
         &--highlight1 {
-            display: inline-block;
+            display: inline;
             background: $oxford-blue;
-            
-
-            &-wrapper {
-                padding-bottom: 1px;
-                display: inline-block;
-                background: linear-gradient(to right, $royal-blue, $platinum-white);
-            }
+            text-decoration: underline;
+            font-family: "OpenSans-Bold";
         }
 
         &--highlight2 {
-            display: inline-block;
+            display: inline;
             background: $oxford-blue;
-
-            &-wrapper {
-                padding-bottom: 1px;
-                display: inline-block;
-                background: linear-gradient(to right, $red-salsa, $platinum-white);
-            }
-            
+            text-decoration: underline;
+            font-family: "OpenSans-Bold";
         }
 
         &--highlight3 {
-            display: inline-block;
+            display: inline;
             background: $oxford-blue;
-            
-
-            &-wrapper {
-                padding-bottom: 1px;
-                display: inline-block;
-                background: linear-gradient(to right, $sap-green, $platinum-white);
-            }
+            text-decoration: underline;
+            font-family: "OpenSans-Bold";
         }
     }
 }
